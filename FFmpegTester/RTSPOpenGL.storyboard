@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--GLKit View Controller-->
+        <scene sceneID="ck3-BJ-4rw">
+            <objects>
+                <glkViewController storyboardIdentifier="RTSPOpenGL" useStoryboardIdentifierAsRestorationIdentifier="YES" preferredFramesPerSecond="30" id="qdJ-Jf-mQr" customClass="RTSPOpenGL" customModule="FFmpegTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hY8-BY-MNe"/>
+                        <viewControllerLayoutGuide type="bottom" id="jVI-bh-Qqs"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="6yZ-st-oIs" customClass="Scene3DView" customModule="FFmpegTester" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rrp-rF-Mto">
+                                <rect key="frame" x="387" y="440" width="213" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="7cb-Yz-SgP"/>
+                                    <constraint firstAttribute="height" constant="160" id="oAB-ap-S8G"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jVI-bh-Qqs" firstAttribute="top" secondItem="rrp-rF-Mto" secondAttribute="bottom" id="0Nf-Ep-SXZ"/>
+                            <constraint firstAttribute="trailing" secondItem="rrp-rF-Mto" secondAttribute="trailing" id="Eg3-dM-Ewm"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="qdJ-Jf-mQr" id="3S4-pu-3Vo"/>
+                        </connections>
+                    </glkView>
+                    <connections>
+                        <outlet property="imageView" destination="rrp-rF-Mto" id="x4u-tp-V2Z"/>
+                        <outlet property="scene3DView" destination="6yZ-st-oIs" id="fZ5-VU-yiy"/>
+                    </connections>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61g-Yx-DYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="-588"/>
+        </scene>
+    </scenes>
+</document>
