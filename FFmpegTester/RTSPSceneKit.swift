@@ -301,17 +301,17 @@ extension RTSPSceneKit{
 //    rotation ~> 0.0,0.0,0.0,0.0
 //    position ~> 0.0,0.0,102.426
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let orientation = sceneView.pointOfView?.orientation
-        let rotation = sceneView.pointOfView?.rotation
-        let position = sceneView.pointOfView?.position
-        
-        
-        print("orientation ~> \(orientation!.x),\(orientation!.y),\(orientation!.z),\(orientation!.w)")
-        print("rotation ~> \(rotation!.x),\(rotation!.y),\(rotation!.z),\(rotation!.w)")
-        print("position ~> \(position!.x),\(position!.y),\(position!.z)")
-        
-    }
+//    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        let orientation = sceneView.pointOfView?.orientation
+//        let rotation = sceneView.pointOfView?.rotation
+//        let position = sceneView.pointOfView?.position
+//        
+//        
+//        print("orientation ~> \(orientation!.x),\(orientation!.y),\(orientation!.z),\(orientation!.w)")
+//        print("rotation ~> \(rotation!.x),\(rotation!.y),\(rotation!.z),\(rotation!.w)")
+//        print("position ~> \(position!.x),\(position!.y),\(position!.z)")
+//        
+//    }
     
 }
 
