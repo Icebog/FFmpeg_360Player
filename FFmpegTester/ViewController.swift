@@ -32,11 +32,11 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
-    @IBAction func buttonPressed(sender: UIButton) {
+    @IBAction func buttonPressed(_ sender: UIButton) {
         openRTSPPanel()
     }
     
-    @IBAction func button2Pressed(sender: UIButton) {
+    @IBAction func button2Pressed(_ sender: UIButton) {
         openRTSPSceneKit()
     }
     
@@ -48,21 +48,21 @@ extension ViewController{
     func openRTSPPanel(){
         let storyboard: UIStoryboard = UIStoryboard(name: "RTSPPanel", bundle: nil)
         
-        let rtspPenal:RTSPPanel = storyboard.instantiateViewControllerWithIdentifier("RTSPPanel") as! RTSPPanel
+        let rtspPenal:RTSPPanel = storyboard.instantiateViewController(withIdentifier: "RTSPPanel") as! RTSPPanel
         
-        presentViewController(rtspPenal, animated: true, completion: nil)
+        present(rtspPenal, animated: true, completion: nil)
     }
     
     func openRTSPOpenGL(){
         let storyboard: UIStoryboard = UIStoryboard(name: "RTSPOpenGL", bundle: nil)
-        let rtspOpenGL:RTSPOpenGL = storyboard.instantiateViewControllerWithIdentifier("RTSPOpenGL") as! RTSPOpenGL
-        presentViewController(rtspOpenGL, animated: true, completion: nil)
+        let rtspOpenGL:RTSPOpenGL = storyboard.instantiateViewController(withIdentifier: "RTSPOpenGL") as! RTSPOpenGL
+        present(rtspOpenGL, animated: true, completion: nil)
     }
     
     func openRTSPSceneKit(){
         let storyboard: UIStoryboard = UIStoryboard(name: "RTSPSceneKit", bundle: nil)
-        let rtspSceneKit:RTSPSceneKit = storyboard.instantiateViewControllerWithIdentifier("RTSPSceneKit") as! RTSPSceneKit
-        presentViewController(rtspSceneKit, animated: true, completion: nil)
+        let rtspSceneKit:RTSPSceneKit = storyboard.instantiateViewController(withIdentifier: "RTSPSceneKit") as! RTSPSceneKit
+        present(rtspSceneKit, animated: true, completion: nil)
     }
 
     

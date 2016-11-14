@@ -9,7 +9,7 @@
 import GLKit
 
 class Scene3DView: GLKView{
-    private var sceneObjects = [NSObject]()
+    fileprivate var sceneObjects = [NSObject]()
     
     // MARK: - Properties
     var camera = Camera(){
@@ -17,15 +17,15 @@ class Scene3DView: GLKView{
     }
     
     // MARK: - Public interface
-    func addSceneObject(object: NSObject){
+    func addSceneObject(_ object: NSObject){
         if !self.sceneObjects.contains(object){
             self.sceneObjects.append(object)
         }
     }
     
-    func removeSceneObject(object: NSObject){
-        if let index = self.sceneObjects.indexOf(object){
-            self.sceneObjects.removeAtIndex(index)
+    func removeSceneObject(_ object: NSObject){
+        if let index = self.sceneObjects.index(of: object){
+            self.sceneObjects.remove(at: index)
         }
     }
     

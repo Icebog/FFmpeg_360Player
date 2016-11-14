@@ -10,8 +10,8 @@ import GLKit
 
 class Camera: NSObject {
     
-    private var projectionMatrix = GLKMatrix4()
-    private var viewMatrix = GLKMatrix4()
+    fileprivate var projectionMatrix = GLKMatrix4()
+    fileprivate var viewMatrix = GLKMatrix4()
     
     // MARK: - Projection matrix properties
     var fovRadians: Float = GLKMathDegreesToRadians(65.0){
@@ -61,11 +61,11 @@ class Camera: NSObject {
     }
     
     // MARK: - Updaters
-    private func updateProjectionMatrix(){
+    fileprivate func updateProjectionMatrix(){
         self.projectionMatrix = GLKMatrix4MakePerspective(self.fovRadians, self.aspect, self.nearZ, self.farZ)
     }
     
-    private func updateViewMatrix(){
+    fileprivate func updateViewMatrix(){
         let cosPitch = cosf(self.pitch)
         let sinPitch = sinf(self.pitch)
         let cosYaw = cosf(self.yaw)

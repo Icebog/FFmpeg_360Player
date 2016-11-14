@@ -15,9 +15,9 @@ class RTSPOpenGL: GLKViewController {
     
     @IBOutlet var imageView: UIImageView!
     
-    private var context: EAGLContext!
+    fileprivate var context: EAGLContext!
     
-    private var skysphere: Skysphere!
+    fileprivate var skysphere: Skysphere!
     
     var rtspPlayer:RTSPPlayer!
     
@@ -29,7 +29,7 @@ class RTSPOpenGL: GLKViewController {
     
     var lastFrameTime:Double = 0.0
     
-    var nextFrameTimer:NSTimer!
+    var nextFrameTimer:Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class RTSPOpenGL: GLKViewController {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         rtspPlayer = RTSPPlayer(videoPath: rtspTestPath, usesTcp: false)
         //        rtspPlayer.outputHeight = 960
@@ -56,7 +56,7 @@ class RTSPOpenGL: GLKViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         //RTSP release
         if nextFrameTimer != nil {
             nextFrameTimer.invalidate()
@@ -67,8 +67,8 @@ class RTSPOpenGL: GLKViewController {
         }
         
         //OpenGL release
-        if EAGLContext.currentContext() == self.context{
-            EAGLContext.setCurrentContext(nil)
+        if EAGLContext.current() == self.context{
+            EAGLContext.setCurrent(nil)
         }
     }
     
@@ -84,14 +84,14 @@ class RTSPOpenGL: GLKViewController {
 //MARK: - Actions
 extension RTSPOpenGL{
     
-    func panGestureAction(sender: UIPanGestureRecognizer){
-        if (sender.state == .Changed){
+    func panGestureAction(_ sender: UIPanGestureRecognizer){
+        if (sender.state == .changed){
             let dt = CGFloat(self.timeSinceLastUpdate)
-            let velocity = sender.velocityInView(sender.view)
+            let velocity = sender.velocity(in: sender.view)
             let translation = CGPoint(x: velocity.x * dt, y: velocity.y * dt)
             
             let camera = self.scene3DView.camera
-            let scale = Float(UIScreen.mainScreen().scale)
+            let scale = Float(UIScreen.main.scale)
             let dh = Float(translation.x / self.view.frame.size.width) * camera.fovRadians * scale
             let dv = Float(translation.y / self.view.frame.size.height) * camera.fovRadians * scale
             camera.yaw += dh
@@ -111,12 +111,12 @@ extension RTSPOpenGL{
             nextFrameTimer.invalidate()
         }
         
-        nextFrameTimer = NSTimer.scheduledTimerWithTimeInterval(1.0 / rtspPlayer.fps, target: self, selector: #selector(RTSPPanel.displayNextFrame(_:)), userInfo: nil, repeats: true)
+        nextFrameTimer = Timer.scheduledTimer(timeInterval: 1.0 / rtspPlayer.fps, target: self, selector: #selector(RTSPPanel.displayNextFrame(_:)), userInfo: nil, repeats: true)
         
     }
     
-    func displayNextFrame(timer:NSTimer){
-        let startTime:NSTimeInterval = NSDate().timeIntervalSinceReferenceDate
+    func displayNextFrame(_ timer:Timer){
+        let startTime:TimeInterval = Date().timeIntervalSinceReferenceDate
         
         if !rtspPlayer.stepFrame() {
             timer.invalidate()
@@ -128,10 +128,10 @@ extension RTSPOpenGL{
         
         if let currentImage:UIImage = rtspPlayer.currentImage{
             
-            if let cgiImage = currentImage.CGImage {
+            if let cgiImage = currentImage.cgImage {
                 
 
-                rtspPlayer.baseAddressFromCGImage(cgiImage, completion: { (size, baseAddress) in
+                rtspPlayer.baseAddress(from: cgiImage, completion: { (size, baseAddress) in
                     
                     self.skysphere.updateTexture(size, imageData: baseAddress)
                     
@@ -140,7 +140,7 @@ extension RTSPOpenGL{
             }
         }
         
-        let frameTime:Double = 1.0 / (NSDate().timeIntervalSinceReferenceDate / startTime)
+        let frameTime:Double = 1.0 / (Date().timeIntervalSinceReferenceDate / startTime)
         
         if lastFrameTime < 0.0 {
             lastFrameTime = frameTime
@@ -151,7 +151,7 @@ extension RTSPOpenGL{
         //        print("fps: \(rtspPlayer.fps)")
     }
     
-    private func getLERP(frameTime:Double,lastFrameTime:Double,factor:Double) -> Double {
+    fileprivate func getLERP(_ frameTime:Double,lastFrameTime:Double,factor:Double) -> Double {
         //        LERP(A,B,C) ((A)*(1.0-C)+(B)*C)
         return frameTime * (1.0 - factor) + lastFrameTime * factor
     }
@@ -159,12 +159,12 @@ extension RTSPOpenGL{
 
 //MARK: - OpenGL Controller
 extension RTSPOpenGL{
-        private func configureContext(){
-            context = EAGLContext(API: EAGLRenderingAPI.OpenGLES3)
-            EAGLContext.setCurrentContext(context)
+        fileprivate func configureContext(){
+            context = EAGLContext(api: EAGLRenderingAPI.openGLES3)
+            EAGLContext.setCurrent(context)
         }
     
-        private func configureView(){
+        fileprivate func configureView(){
             self.scene3DView.context = self.context
     
             self.skysphere = Skysphere(radius: 60)

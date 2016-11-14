@@ -1,880 +1,3235 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		023B3ADC983CC6DAAF7D0778346F0671 /* Pods-FFmpegTesterUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F1E9F4332AFBBDBB8739158AA08824 /* Pods-FFmpegTesterUITests-dummy.m */; };
-		03D4DCD2142D82A48A23D28477F1599B /* Pods-FFmpegTester-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68DCF91683EBF6F8CF5B897AC2AEE1 /* Pods-FFmpegTester-dummy.m */; };
-		18D411A2AE406FA311E81015A4DE9974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		1DE39278A2A553CB4708A1D1128E079D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		39474A89E7AB1E82F54F4E22DC5915FF /* Pods-FFmpegTesterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2623934D991EECBC2415E25DF04FB11A /* Pods-FFmpegTesterTests-dummy.m */; };
-		6EA5A25BB67FA675A9FF955F63E90D3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		99F547FA211D2BDFACE4803EC2D626E2 /* Pods-FFmpegTesterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C46F44A809336CC24F310789074C7E /* Pods-FFmpegTesterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6D4A3D37A4A0102583F79514742CCA0 /* Pods-FFmpegTesterUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB225DCF00E4331210291B5F450B6943 /* Pods-FFmpegTesterUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBB89A52080D3754E55ABC1824B66AA6 /* Pods-FFmpegTester-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D670822FF1800A229E5EBE80AFB2F9 /* Pods-FFmpegTester-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		0479C74DBDB8CFCEA2CF60EC3A9126BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06BA6F041C46A09065BAA5BCEAB1007E /* vorbis_parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vorbis_parser.h; path = "ffmpeg-ios-static-libs/include/libavcodec/vorbis_parser.h"; sourceTree = "<group>"; };
-		0A9840DF356BD0C67DE9C1FD970D09E0 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "ffmpeg-ios-static-libs/include/libavdevice/version.h"; sourceTree = "<group>"; };
-		0AD0FE59D33C0E8BCEFC6CC4A34B7C0D /* bprint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bprint.h; path = "ffmpeg-ios-static-libs/include/libavutil/bprint.h"; sourceTree = "<group>"; };
-		0B19938D9DD8DD9BD073D421C12D686C /* cast5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast5.h; path = "ffmpeg-ios-static-libs/include/libavutil/cast5.h"; sourceTree = "<group>"; };
-		0BA89BEA6E559DF70D6AB89924299E73 /* avformat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avformat.h; path = "ffmpeg-ios-static-libs/include/libavformat/avformat.h"; sourceTree = "<group>"; };
-		0D6BE53201DF17DF80BF81863F7163AD /* Pods-FFmpegTester-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFmpegTester-resources.sh"; sourceTree = "<group>"; };
-		1161683D73AEBF1C443F2D0E14FD16E9 /* swscale.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = swscale.h; path = "ffmpeg-ios-static-libs/include/libswscale/swscale.h"; sourceTree = "<group>"; };
-		1422763B9C9E1F79259EC9137803EF80 /* Pods-FFmpegTesterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FFmpegTesterUITests.release.xcconfig"; sourceTree = "<group>"; };
-		15E1F491B6B9D473F510DDDA2364487D /* murmur3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = murmur3.h; path = "ffmpeg-ios-static-libs/include/libavutil/murmur3.h"; sourceTree = "<group>"; };
-		16465463311E0BBEF41412190199E1BA /* replaygain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = replaygain.h; path = "ffmpeg-ios-static-libs/include/libavutil/replaygain.h"; sourceTree = "<group>"; };
-		1768AE1E458FFF48379D104594F6DDD2 /* ffversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffversion.h; path = "ffmpeg-ios-static-libs/include/libavutil/ffversion.h"; sourceTree = "<group>"; };
-		1B54949DE4CE2045DA07FABC113BD3A2 /* libavformat.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libavformat.a; path = "ffmpeg-ios-static-libs/lib/libavformat.a"; sourceTree = "<group>"; };
-		1C85B53B514140239342BE6060EA1A39 /* d3d11va.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = d3d11va.h; path = "ffmpeg-ios-static-libs/include/libavcodec/d3d11va.h"; sourceTree = "<group>"; };
-		1E230816E29B6B17DA55DDE5F0250439 /* asrc_abuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asrc_abuffer.h; path = "ffmpeg-ios-static-libs/include/libavfilter/asrc_abuffer.h"; sourceTree = "<group>"; };
-		1E863985A2E4D3A19CB3B306E4772E5C /* parseutils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parseutils.h; path = "ffmpeg-ios-static-libs/include/libavutil/parseutils.h"; sourceTree = "<group>"; };
-		1EB6B468C004F63BDDD9462063434299 /* log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log.h; path = "ffmpeg-ios-static-libs/include/libavutil/log.h"; sourceTree = "<group>"; };
-		21A539A51AE3ECCE0359F6B03D46C53D /* Pods-FFmpegTesterUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FFmpegTesterUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		22DFBE25B387DF200CAEB628087493BB /* tea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tea.h; path = "ffmpeg-ios-static-libs/include/libavutil/tea.h"; sourceTree = "<group>"; };
-		2623934D991EECBC2415E25DF04FB11A /* Pods-FFmpegTesterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FFmpegTesterTests-dummy.m"; sourceTree = "<group>"; };
-		2820EDF46B0FD53CC18E74E8A31058D6 /* Pods-FFmpegTesterUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FFmpegTesterUITests.modulemap"; sourceTree = "<group>"; };
-		29A753B45D1B95B2043514B574A0AC24 /* eval.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = eval.h; path = "ffmpeg-ios-static-libs/include/libavutil/eval.h"; sourceTree = "<group>"; };
-		29C46F44A809336CC24F310789074C7E /* Pods-FFmpegTesterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FFmpegTesterTests-umbrella.h"; sourceTree = "<group>"; };
-		2BBEABDA2278E50A2DEEFE3E7782AC39 /* timecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = timecode.h; path = "ffmpeg-ios-static-libs/include/libavutil/timecode.h"; sourceTree = "<group>"; };
-		2C02DFE9FE84F21E9D804C824191C750 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "ffmpeg-ios-static-libs/include/libavutil/buffer.h"; sourceTree = "<group>"; };
-		2D4E6344393377B01D3F52C7E4DFA866 /* attributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = attributes.h; path = "ffmpeg-ios-static-libs/include/libavutil/attributes.h"; sourceTree = "<group>"; };
-		310695505F008F8884161AABB9EB1636 /* old_codec_ids.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = old_codec_ids.h; path = "ffmpeg-ios-static-libs/include/libavcodec/old_codec_ids.h"; sourceTree = "<group>"; };
-		32EDBE7F7C0AE89E4E93E0E2F8B6B95C /* libavcodec.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libavcodec.a; path = "ffmpeg-ios-static-libs/lib/libavcodec.a"; sourceTree = "<group>"; };
-		33ECB725C5E82170DC2AE9D3EA06637F /* audio_fifo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = audio_fifo.h; path = "ffmpeg-ios-static-libs/include/libavutil/audio_fifo.h"; sourceTree = "<group>"; };
-		36AAECE4781685D3C4195FDF0A74D1B5 /* Pods-FFmpegTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FFmpegTester.release.xcconfig"; sourceTree = "<group>"; };
-		3751F4ECDFB4CA8B92A3AB189C588959 /* avcodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avcodec.h; path = "ffmpeg-ios-static-libs/include/libavfilter/avcodec.h"; sourceTree = "<group>"; };
-		3A68DCF91683EBF6F8CF5B897AC2AEE1 /* Pods-FFmpegTester-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FFmpegTester-dummy.m"; sourceTree = "<group>"; };
-		3C06633672C821121FA93C219A0A62BC /* vdpau.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vdpau.h; path = "ffmpeg-ios-static-libs/include/libavcodec/vdpau.h"; sourceTree = "<group>"; };
-		40EB60BF2502645F24399AA12602E6D9 /* display.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = display.h; path = "ffmpeg-ios-static-libs/include/libavutil/display.h"; sourceTree = "<group>"; };
-		47324D75C0852A0516EF08220B45CEEA /* Pods-FFmpegTesterUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FFmpegTesterUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		47AB7A121AD1B385E97E489AF7AF29A5 /* avassert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avassert.h; path = "ffmpeg-ios-static-libs/include/libavutil/avassert.h"; sourceTree = "<group>"; };
-		4CFE2FAC0943F6DBE00E84136A49813E /* Pods-FFmpegTesterUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFmpegTesterUITests-resources.sh"; sourceTree = "<group>"; };
-		4E2F0D75415F7D6660C1FA40879C30B9 /* dv_profile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dv_profile.h; path = "ffmpeg-ios-static-libs/include/libavcodec/dv_profile.h"; sourceTree = "<group>"; };
-		4F47E1B4E2F0CB9014949C029A139A6D /* Pods-FFmpegTester-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FFmpegTester-acknowledgements.plist"; sourceTree = "<group>"; };
-		4F729190DE358DBE3FA66FDBCF1166CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59C3D98202D1ECAF85FC556B985E0D38 /* avfiltergraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avfiltergraph.h; path = "ffmpeg-ios-static-libs/include/libavfilter/avfiltergraph.h"; sourceTree = "<group>"; };
-		69BE1E44CF519D28B2CF2B30D5957D91 /* lzo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lzo.h; path = "ffmpeg-ios-static-libs/include/libavutil/lzo.h"; sourceTree = "<group>"; };
-		6B8E64832BB20C34FB7378F16229DE1E /* swresample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = swresample.h; path = "ffmpeg-ios-static-libs/include/libswresample/swresample.h"; sourceTree = "<group>"; };
-		6EB98E47950B273D99934C34EE610A92 /* Pods-FFmpegTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FFmpegTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		71E7B43AAA1E17AAD7C2884826447325 /* pixdesc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pixdesc.h; path = "ffmpeg-ios-static-libs/include/libavutil/pixdesc.h"; sourceTree = "<group>"; };
-		748A86C453B57DF3F116D50EF4747F66 /* buffersrc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffersrc.h; path = "ffmpeg-ios-static-libs/include/libavfilter/buffersrc.h"; sourceTree = "<group>"; };
-		748F8697A64DF78ABABF6EC7F8799556 /* channel_layout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = channel_layout.h; path = "ffmpeg-ios-static-libs/include/libavutil/channel_layout.h"; sourceTree = "<group>"; };
-		75A736255C9A1F49A1B06FBFAB55F185 /* mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mem.h; path = "ffmpeg-ios-static-libs/include/libavutil/mem.h"; sourceTree = "<group>"; };
-		76CB7E5755C22661BE9771642475772D /* avutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avutil.h; path = "ffmpeg-ios-static-libs/include/libavutil/avutil.h"; sourceTree = "<group>"; };
-		78EC6B95C050C9A71DE6D0B7119A0F82 /* Pods-FFmpegTesterTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FFmpegTesterTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7948F33DB0C140709C0A5AF7530244BB /* cpu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cpu.h; path = "ffmpeg-ios-static-libs/include/libavutil/cpu.h"; sourceTree = "<group>"; };
-		7BADB9D90844E62EED251C001F1313C4 /* old_pix_fmts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = old_pix_fmts.h; path = "ffmpeg-ios-static-libs/include/libavutil/old_pix_fmts.h"; sourceTree = "<group>"; };
-		7BD395C69FF54CCAF12A788819D93BF0 /* avstring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avstring.h; path = "ffmpeg-ios-static-libs/include/libavutil/avstring.h"; sourceTree = "<group>"; };
-		7C493121AF272097EAE45360A17249C0 /* avdevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avdevice.h; path = "ffmpeg-ios-static-libs/include/libavdevice/avdevice.h"; sourceTree = "<group>"; };
-		7D667B0BE5623CF92892DC1FE6E1F7DD /* downmix_info.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = downmix_info.h; path = "ffmpeg-ios-static-libs/include/libavutil/downmix_info.h"; sourceTree = "<group>"; };
-		7DABC8DEE2DAC0E1860E56D4DFD80FDB /* bswap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bswap.h; path = "ffmpeg-ios-static-libs/include/libavutil/bswap.h"; sourceTree = "<group>"; };
-		8036B2256F81B2BF12F8E8BB9AAE051F /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "ffmpeg-ios-static-libs/include/libavutil/sha.h"; sourceTree = "<group>"; };
-		80A7DEE7D9BFF390BFF9EE523125FCA0 /* buffersink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffersink.h; path = "ffmpeg-ios-static-libs/include/libavfilter/buffersink.h"; sourceTree = "<group>"; };
-		89450FD3F035FE20A2A7C013702B6B7B /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "ffmpeg-ios-static-libs/include/libavfilter/version.h"; sourceTree = "<group>"; };
-		89E9491D611C41938F247EF29FF304E8 /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "ffmpeg-ios-static-libs/include/libavutil/camellia.h"; sourceTree = "<group>"; };
-		8FFA0EE83FF3C05D7CA815939ED4F510 /* videotoolbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = videotoolbox.h; path = "ffmpeg-ios-static-libs/include/libavcodec/videotoolbox.h"; sourceTree = "<group>"; };
-		9004B350BB4AE4F48BEAC9EAFD0506A8 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "ffmpeg-ios-static-libs/include/libswresample/version.h"; sourceTree = "<group>"; };
-		91EFCB999BB9532E345FDE761F54E2AC /* mathematics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mathematics.h; path = "ffmpeg-ios-static-libs/include/libavutil/mathematics.h"; sourceTree = "<group>"; };
-		924618704B89A5CBA5061BB64FE6CD44 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "ffmpeg-ios-static-libs/include/libavutil/hmac.h"; sourceTree = "<group>"; };
-		92E2CD83B52D8CA8A117C545D18AA965 /* libswscale.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libswscale.a; path = "ffmpeg-ios-static-libs/lib/libswscale.a"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		951879DA87E3577B3226C9D6C212739B /* motion_vector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = motion_vector.h; path = "ffmpeg-ios-static-libs/include/libavutil/motion_vector.h"; sourceTree = "<group>"; };
-		954631D5CC5EFE235623F6D83DD584AC /* Pods-FFmpegTester.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FFmpegTester.modulemap"; sourceTree = "<group>"; };
-		96DD9E773F753DD734700A8F22569576 /* dict.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dict.h; path = "ffmpeg-ios-static-libs/include/libavutil/dict.h"; sourceTree = "<group>"; };
-		9908B9F5122E9232487B76316A72C832 /* macros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = macros.h; path = "ffmpeg-ios-static-libs/include/libavutil/macros.h"; sourceTree = "<group>"; };
-		9AFAAE9EA27ED87CF90400F274F85C71 /* Pods-FFmpegTester-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FFmpegTester-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9EE1695B5AA19D312E7FF647A005BEE2 /* random_seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = random_seed.h; path = "ffmpeg-ios-static-libs/include/libavutil/random_seed.h"; sourceTree = "<group>"; };
-		9F8BDB0CA0855823FF447EC84F300B5A /* intreadwrite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intreadwrite.h; path = "ffmpeg-ios-static-libs/include/libavutil/intreadwrite.h"; sourceTree = "<group>"; };
-		A108930D65C5EC8A6CB2C2B40F58B3CC /* pixfmt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pixfmt.h; path = "ffmpeg-ios-static-libs/include/libavutil/pixfmt.h"; sourceTree = "<group>"; };
-		A391556FEA067B5B729A12EA8560F379 /* twofish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = twofish.h; path = "ffmpeg-ios-static-libs/include/libavutil/twofish.h"; sourceTree = "<group>"; };
-		A4A820CAACC6ED0E53509E91B4F06F75 /* pixelutils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pixelutils.h; path = "ffmpeg-ios-static-libs/include/libavutil/pixelutils.h"; sourceTree = "<group>"; };
-		A4E944A9CEC29410186FABA57A7F484D /* file.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = file.h; path = "ffmpeg-ios-static-libs/include/libavutil/file.h"; sourceTree = "<group>"; };
-		A50192AE347A67290DF938868A65F828 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "ffmpeg-ios-static-libs/include/libavutil/aes.h"; sourceTree = "<group>"; };
-		A52861E219EC9594D86E8C302AE1C1B7 /* lfg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lfg.h; path = "ffmpeg-ios-static-libs/include/libavutil/lfg.h"; sourceTree = "<group>"; };
-		A53849900072C2ACDD139B22ED3B57A0 /* fifo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fifo.h; path = "ffmpeg-ios-static-libs/include/libavutil/fifo.h"; sourceTree = "<group>"; };
-		A5649E612DE086F3B58380A52FD6A981 /* libavutil.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libavutil.a; path = "ffmpeg-ios-static-libs/lib/libavutil.a"; sourceTree = "<group>"; };
-		A75DEC4735858BA831DEF65197B0A736 /* Pods-FFmpegTesterTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFmpegTesterTests-resources.sh"; sourceTree = "<group>"; };
-		A8AC26E31CFD6F9EF0C1D2F0281E94DA /* samplefmt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = samplefmt.h; path = "ffmpeg-ios-static-libs/include/libavutil/samplefmt.h"; sourceTree = "<group>"; };
-		ACF1DA85D78AA6C1A6789E39E73989F2 /* Pods-FFmpegTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FFmpegTesterTests.release.xcconfig"; sourceTree = "<group>"; };
-		AD6D25E698F87977DBF05F87F7A06319 /* Pods_FFmpegTesterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFmpegTesterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF195481F44D46176943D199BCB21E39 /* rational.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rational.h; path = "ffmpeg-ios-static-libs/include/libavutil/rational.h"; sourceTree = "<group>"; };
-		AFBD10F0F053CADE1F1E289564682988 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "ffmpeg-ios-static-libs/include/libavcodec/version.h"; sourceTree = "<group>"; };
-		B2D670822FF1800A229E5EBE80AFB2F9 /* Pods-FFmpegTester-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FFmpegTester-umbrella.h"; sourceTree = "<group>"; };
-		B42836B6C50471DE9A6000CD9A48B55E /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "ffmpeg-ios-static-libs/include/libavutil/md5.h"; sourceTree = "<group>"; };
-		B658C11F6A64919DDDE701794E1A5DF2 /* avio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avio.h; path = "ffmpeg-ios-static-libs/include/libavformat/avio.h"; sourceTree = "<group>"; };
-		B83BB609F1A3B7A4D13C5FF77F33B85D /* stereo3d.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stereo3d.h; path = "ffmpeg-ios-static-libs/include/libavutil/stereo3d.h"; sourceTree = "<group>"; };
-		BCCD470AB5BFBF49125AE96C4B051FFE /* qsv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = qsv.h; path = "ffmpeg-ios-static-libs/include/libavcodec/qsv.h"; sourceTree = "<group>"; };
-		BD1ADF758B52982A89FCA402FE42F711 /* error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = error.h; path = "ffmpeg-ios-static-libs/include/libavutil/error.h"; sourceTree = "<group>"; };
-		BFFD37B7A5B56450BE7C766A8E08F91D /* timestamp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = timestamp.h; path = "ffmpeg-ios-static-libs/include/libavutil/timestamp.h"; sourceTree = "<group>"; };
-		C1BB1E55AADFF9204B6C1A64124852BB /* Pods-FFmpegTesterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FFmpegTesterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C46C0DE789D01F504A25F223CF5653C6 /* avconfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avconfig.h; path = "ffmpeg-ios-static-libs/include/libavutil/avconfig.h"; sourceTree = "<group>"; };
-		C4B7CD11CFE060CF0F7B138B4C88C4A1 /* libavdevice.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libavdevice.a; path = "ffmpeg-ios-static-libs/lib/libavdevice.a"; sourceTree = "<group>"; };
-		C952420563AA3BDE35D4BCACD2516DB3 /* imgutils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = imgutils.h; path = "ffmpeg-ios-static-libs/include/libavutil/imgutils.h"; sourceTree = "<group>"; };
-		CDC233D9DE6D26D394CCD51D9688CC4D /* Pods-FFmpegTesterUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFmpegTesterUITests-frameworks.sh"; sourceTree = "<group>"; };
-		CE90AF2594D915FA0D50326C51574DD5 /* libavfilter.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libavfilter.a; path = "ffmpeg-ios-static-libs/lib/libavfilter.a"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CEC5D987710804D7392A82F80005B483 /* crc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc.h; path = "ffmpeg-ios-static-libs/include/libavutil/crc.h"; sourceTree = "<group>"; };
-		D01147C5C28D7C6BF65BBD1BD3385D74 /* Pods_FFmpegTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFmpegTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D096F560AB8E96D2EDEE5C65F73F3610 /* time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = time.h; path = "ffmpeg-ios-static-libs/include/libavutil/time.h"; sourceTree = "<group>"; };
-		D121227697CA11C0B0A33A902019FEFF /* Pods-FFmpegTester-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFmpegTester-frameworks.sh"; sourceTree = "<group>"; };
-		D169B297F7B27B55B58875322FEFE9EF /* dxva2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dxva2.h; path = "ffmpeg-ios-static-libs/include/libavcodec/dxva2.h"; sourceTree = "<group>"; };
-		D1E37D31E45767B227289EC3ECC3E7C4 /* adler32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = adler32.h; path = "ffmpeg-ios-static-libs/include/libavutil/adler32.h"; sourceTree = "<group>"; };
-		D60D89AF659FCF4A4DD69D09AFC587E4 /* xvmc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xvmc.h; path = "ffmpeg-ios-static-libs/include/libavcodec/xvmc.h"; sourceTree = "<group>"; };
-		D6795F7A002E183D7A1F3D777C73C52D /* avfft.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avfft.h; path = "ffmpeg-ios-static-libs/include/libavcodec/avfft.h"; sourceTree = "<group>"; };
-		D975CE05EECBA48F27457579BB97E06E /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = common.h; path = "ffmpeg-ios-static-libs/include/libavutil/common.h"; sourceTree = "<group>"; };
-		DCAEFD77E97F66A7107E743918144267 /* avcodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avcodec.h; path = "ffmpeg-ios-static-libs/include/libavcodec/avcodec.h"; sourceTree = "<group>"; };
-		DF0C96729E45B05944CFAD6491E904A7 /* Pods-FFmpegTesterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FFmpegTesterUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DF1E90799AF576CA1F0C98C6E8DE56F3 /* libswresample.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libswresample.a; path = "ffmpeg-ios-static-libs/lib/libswresample.a"; sourceTree = "<group>"; };
-		DF4178E9F3A14092871338E09BB8E3D9 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "ffmpeg-ios-static-libs/include/libavutil/version.h"; sourceTree = "<group>"; };
-		DFE8705E309B78017F293D414B47F9BE /* intfloat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intfloat.h; path = "ffmpeg-ios-static-libs/include/libavutil/intfloat.h"; sourceTree = "<group>"; };
-		E28999D0EA05FB8F2A9A1F64241F1A24 /* Pods_FFmpegTesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFmpegTesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4926F92F6A5379250C409F0015C565B /* Pods-FFmpegTesterTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FFmpegTesterTests-frameworks.sh"; sourceTree = "<group>"; };
-		E5099F878459F18F43BA192ACC04964A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E57EDD86C58138ECDBA817CCDF844785 /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = "ffmpeg-ios-static-libs/include/libavutil/hash.h"; sourceTree = "<group>"; };
-		E9029AA937B044D70E2490EC44113344 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "ffmpeg-ios-static-libs/include/libavformat/version.h"; sourceTree = "<group>"; };
-		E9A7CB59732FA5B9DA52C7F954E83C0F /* audioconvert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = audioconvert.h; path = "ffmpeg-ios-static-libs/include/libavutil/audioconvert.h"; sourceTree = "<group>"; };
-		EB225DCF00E4331210291B5F450B6943 /* Pods-FFmpegTesterUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FFmpegTesterUITests-umbrella.h"; sourceTree = "<group>"; };
-		EC5CA168EC3DE0F1FC40F5D7C3B1D711 /* Pods-FFmpegTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FFmpegTester.debug.xcconfig"; sourceTree = "<group>"; };
-		EFB2E9FE3F10D527402AFD0A9CAE1D78 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "ffmpeg-ios-static-libs/include/libavutil/ripemd.h"; sourceTree = "<group>"; };
-		F0038AC4647A8B71198E8DC673EA61B0 /* sha512.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha512.h; path = "ffmpeg-ios-static-libs/include/libavutil/sha512.h"; sourceTree = "<group>"; };
-		F029D2FC5B79172F399953C917ED14A7 /* vaapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vaapi.h; path = "ffmpeg-ios-static-libs/include/libavcodec/vaapi.h"; sourceTree = "<group>"; };
-		F03606143D892B821F442E1EEE9851D2 /* vda.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vda.h; path = "ffmpeg-ios-static-libs/include/libavcodec/vda.h"; sourceTree = "<group>"; };
-		F03EED3733F4E96B15B383AAA5BEFAF1 /* base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base64.h; path = "ffmpeg-ios-static-libs/include/libavutil/base64.h"; sourceTree = "<group>"; };
-		F0F1E9F4332AFBBDBB8739158AA08824 /* Pods-FFmpegTesterUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FFmpegTesterUITests-dummy.m"; sourceTree = "<group>"; };
-		F10F2E928D96776374629DFAB139B0BC /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "ffmpeg-ios-static-libs/include/libswscale/version.h"; sourceTree = "<group>"; };
-		F469459658E27ECE3CE924C9426795E0 /* Pods-FFmpegTesterTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FFmpegTesterTests.modulemap"; sourceTree = "<group>"; };
-		F64DA5E6DDDF10BAAACD392846EDFF23 /* xtea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xtea.h; path = "ffmpeg-ios-static-libs/include/libavutil/xtea.h"; sourceTree = "<group>"; };
-		F8DAB036E8409E09A0FE30CD0F781953 /* threadmessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = threadmessage.h; path = "ffmpeg-ios-static-libs/include/libavutil/threadmessage.h"; sourceTree = "<group>"; };
-		F98B3A7770EA4339217E90F37767B685 /* opt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opt.h; path = "ffmpeg-ios-static-libs/include/libavutil/opt.h"; sourceTree = "<group>"; };
-		F99A05D2648A1F94728C80AF15C7930F /* avfilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avfilter.h; path = "ffmpeg-ios-static-libs/include/libavfilter/avfilter.h"; sourceTree = "<group>"; };
-		F9AB2D6B9B2CFC815E5C46C55A4E6CBD /* frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = frame.h; path = "ffmpeg-ios-static-libs/include/libavutil/frame.h"; sourceTree = "<group>"; };
-		FEC879AB71C3CE749609CDAB30EBAF4C /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "ffmpeg-ios-static-libs/include/libavutil/blowfish.h"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		0C3251EC624594B08AAD93D43FF09E46 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18D411A2AE406FA311E81015A4DE9974 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2E558CBB1C655D43B4905727E9F5889B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6EA5A25BB67FA675A9FF955F63E90D3C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7142891D95F7386F03F6A6D6EE2FD61A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DE39278A2A553CB4708A1D1128E079D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		108CA4D7153AC3FEA712F90DC8D6D289 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BC0FA9FC5F4E8846481229F1C70D62B9 /* Pods-FFmpegTester */,
-				9F0DE7E2CC3DFE844D1BED5254FFD07F /* Pods-FFmpegTesterTests */,
-				CD5E104940D09E02B0328EFEEBB056CE /* Pods-FFmpegTesterUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		1AB6045F3C394018A2B8D7258CE158C3 /* FFmpeg */ = {
-			isa = PBXGroup;
-			children = (
-				69E6A8724B4DA68756172D37C2497E52 /* precompiled */,
-			);
-			path = FFmpeg;
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		69E6A8724B4DA68756172D37C2497E52 /* precompiled */ = {
-			isa = PBXGroup;
-			children = (
-				D1E37D31E45767B227289EC3ECC3E7C4 /* adler32.h */,
-				A50192AE347A67290DF938868A65F828 /* aes.h */,
-				1E230816E29B6B17DA55DDE5F0250439 /* asrc_abuffer.h */,
-				2D4E6344393377B01D3F52C7E4DFA866 /* attributes.h */,
-				33ECB725C5E82170DC2AE9D3EA06637F /* audio_fifo.h */,
-				E9A7CB59732FA5B9DA52C7F954E83C0F /* audioconvert.h */,
-				47AB7A121AD1B385E97E489AF7AF29A5 /* avassert.h */,
-				DCAEFD77E97F66A7107E743918144267 /* avcodec.h */,
-				3751F4ECDFB4CA8B92A3AB189C588959 /* avcodec.h */,
-				C46C0DE789D01F504A25F223CF5653C6 /* avconfig.h */,
-				7C493121AF272097EAE45360A17249C0 /* avdevice.h */,
-				D6795F7A002E183D7A1F3D777C73C52D /* avfft.h */,
-				F99A05D2648A1F94728C80AF15C7930F /* avfilter.h */,
-				59C3D98202D1ECAF85FC556B985E0D38 /* avfiltergraph.h */,
-				0BA89BEA6E559DF70D6AB89924299E73 /* avformat.h */,
-				B658C11F6A64919DDDE701794E1A5DF2 /* avio.h */,
-				7BD395C69FF54CCAF12A788819D93BF0 /* avstring.h */,
-				76CB7E5755C22661BE9771642475772D /* avutil.h */,
-				F03EED3733F4E96B15B383AAA5BEFAF1 /* base64.h */,
-				FEC879AB71C3CE749609CDAB30EBAF4C /* blowfish.h */,
-				0AD0FE59D33C0E8BCEFC6CC4A34B7C0D /* bprint.h */,
-				7DABC8DEE2DAC0E1860E56D4DFD80FDB /* bswap.h */,
-				2C02DFE9FE84F21E9D804C824191C750 /* buffer.h */,
-				80A7DEE7D9BFF390BFF9EE523125FCA0 /* buffersink.h */,
-				748A86C453B57DF3F116D50EF4747F66 /* buffersrc.h */,
-				89E9491D611C41938F247EF29FF304E8 /* camellia.h */,
-				0B19938D9DD8DD9BD073D421C12D686C /* cast5.h */,
-				748F8697A64DF78ABABF6EC7F8799556 /* channel_layout.h */,
-				D975CE05EECBA48F27457579BB97E06E /* common.h */,
-				7948F33DB0C140709C0A5AF7530244BB /* cpu.h */,
-				CEC5D987710804D7392A82F80005B483 /* crc.h */,
-				1C85B53B514140239342BE6060EA1A39 /* d3d11va.h */,
-				96DD9E773F753DD734700A8F22569576 /* dict.h */,
-				40EB60BF2502645F24399AA12602E6D9 /* display.h */,
-				7D667B0BE5623CF92892DC1FE6E1F7DD /* downmix_info.h */,
-				4E2F0D75415F7D6660C1FA40879C30B9 /* dv_profile.h */,
-				D169B297F7B27B55B58875322FEFE9EF /* dxva2.h */,
-				BD1ADF758B52982A89FCA402FE42F711 /* error.h */,
-				29A753B45D1B95B2043514B574A0AC24 /* eval.h */,
-				1768AE1E458FFF48379D104594F6DDD2 /* ffversion.h */,
-				A53849900072C2ACDD139B22ED3B57A0 /* fifo.h */,
-				A4E944A9CEC29410186FABA57A7F484D /* file.h */,
-				F9AB2D6B9B2CFC815E5C46C55A4E6CBD /* frame.h */,
-				E57EDD86C58138ECDBA817CCDF844785 /* hash.h */,
-				924618704B89A5CBA5061BB64FE6CD44 /* hmac.h */,
-				C952420563AA3BDE35D4BCACD2516DB3 /* imgutils.h */,
-				DFE8705E309B78017F293D414B47F9BE /* intfloat.h */,
-				9F8BDB0CA0855823FF447EC84F300B5A /* intreadwrite.h */,
-				A52861E219EC9594D86E8C302AE1C1B7 /* lfg.h */,
-				1EB6B468C004F63BDDD9462063434299 /* log.h */,
-				69BE1E44CF519D28B2CF2B30D5957D91 /* lzo.h */,
-				9908B9F5122E9232487B76316A72C832 /* macros.h */,
-				91EFCB999BB9532E345FDE761F54E2AC /* mathematics.h */,
-				B42836B6C50471DE9A6000CD9A48B55E /* md5.h */,
-				75A736255C9A1F49A1B06FBFAB55F185 /* mem.h */,
-				951879DA87E3577B3226C9D6C212739B /* motion_vector.h */,
-				15E1F491B6B9D473F510DDDA2364487D /* murmur3.h */,
-				310695505F008F8884161AABB9EB1636 /* old_codec_ids.h */,
-				7BADB9D90844E62EED251C001F1313C4 /* old_pix_fmts.h */,
-				F98B3A7770EA4339217E90F37767B685 /* opt.h */,
-				1E863985A2E4D3A19CB3B306E4772E5C /* parseutils.h */,
-				71E7B43AAA1E17AAD7C2884826447325 /* pixdesc.h */,
-				A4A820CAACC6ED0E53509E91B4F06F75 /* pixelutils.h */,
-				A108930D65C5EC8A6CB2C2B40F58B3CC /* pixfmt.h */,
-				BCCD470AB5BFBF49125AE96C4B051FFE /* qsv.h */,
-				9EE1695B5AA19D312E7FF647A005BEE2 /* random_seed.h */,
-				AF195481F44D46176943D199BCB21E39 /* rational.h */,
-				16465463311E0BBEF41412190199E1BA /* replaygain.h */,
-				EFB2E9FE3F10D527402AFD0A9CAE1D78 /* ripemd.h */,
-				A8AC26E31CFD6F9EF0C1D2F0281E94DA /* samplefmt.h */,
-				8036B2256F81B2BF12F8E8BB9AAE051F /* sha.h */,
-				F0038AC4647A8B71198E8DC673EA61B0 /* sha512.h */,
-				B83BB609F1A3B7A4D13C5FF77F33B85D /* stereo3d.h */,
-				6B8E64832BB20C34FB7378F16229DE1E /* swresample.h */,
-				1161683D73AEBF1C443F2D0E14FD16E9 /* swscale.h */,
-				22DFBE25B387DF200CAEB628087493BB /* tea.h */,
-				F8DAB036E8409E09A0FE30CD0F781953 /* threadmessage.h */,
-				D096F560AB8E96D2EDEE5C65F73F3610 /* time.h */,
-				2BBEABDA2278E50A2DEEFE3E7782AC39 /* timecode.h */,
-				BFFD37B7A5B56450BE7C766A8E08F91D /* timestamp.h */,
-				A391556FEA067B5B729A12EA8560F379 /* twofish.h */,
-				F029D2FC5B79172F399953C917ED14A7 /* vaapi.h */,
-				F03606143D892B821F442E1EEE9851D2 /* vda.h */,
-				3C06633672C821121FA93C219A0A62BC /* vdpau.h */,
-				E9029AA937B044D70E2490EC44113344 /* version.h */,
-				AFBD10F0F053CADE1F1E289564682988 /* version.h */,
-				9004B350BB4AE4F48BEAC9EAFD0506A8 /* version.h */,
-				0A9840DF356BD0C67DE9C1FD970D09E0 /* version.h */,
-				F10F2E928D96776374629DFAB139B0BC /* version.h */,
-				89450FD3F035FE20A2A7C013702B6B7B /* version.h */,
-				DF4178E9F3A14092871338E09BB8E3D9 /* version.h */,
-				8FFA0EE83FF3C05D7CA815939ED4F510 /* videotoolbox.h */,
-				06BA6F041C46A09065BAA5BCEAB1007E /* vorbis_parser.h */,
-				F64DA5E6DDDF10BAAACD392846EDFF23 /* xtea.h */,
-				D60D89AF659FCF4A4DD69D09AFC587E4 /* xvmc.h */,
-				A776D207966916196FA4C2DFEAFB8563 /* Frameworks */,
-			);
-			name = precompiled;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9A028C5662D7E33937B66A40F249E86A /* Pods */,
-				97C7925A67E33C8EBBBDDC693653682E /* Products */,
-				108CA4D7153AC3FEA712F90DC8D6D289 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		97C7925A67E33C8EBBBDDC693653682E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D01147C5C28D7C6BF65BBD1BD3385D74 /* Pods_FFmpegTester.framework */,
-				E28999D0EA05FB8F2A9A1F64241F1A24 /* Pods_FFmpegTesterTests.framework */,
-				AD6D25E698F87977DBF05F87F7A06319 /* Pods_FFmpegTesterUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9A028C5662D7E33937B66A40F249E86A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1AB6045F3C394018A2B8D7258CE158C3 /* FFmpeg */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9F0DE7E2CC3DFE844D1BED5254FFD07F /* Pods-FFmpegTesterTests */ = {
-			isa = PBXGroup;
-			children = (
-				E5099F878459F18F43BA192ACC04964A /* Info.plist */,
-				F469459658E27ECE3CE924C9426795E0 /* Pods-FFmpegTesterTests.modulemap */,
-				C1BB1E55AADFF9204B6C1A64124852BB /* Pods-FFmpegTesterTests-acknowledgements.markdown */,
-				78EC6B95C050C9A71DE6D0B7119A0F82 /* Pods-FFmpegTesterTests-acknowledgements.plist */,
-				2623934D991EECBC2415E25DF04FB11A /* Pods-FFmpegTesterTests-dummy.m */,
-				E4926F92F6A5379250C409F0015C565B /* Pods-FFmpegTesterTests-frameworks.sh */,
-				A75DEC4735858BA831DEF65197B0A736 /* Pods-FFmpegTesterTests-resources.sh */,
-				29C46F44A809336CC24F310789074C7E /* Pods-FFmpegTesterTests-umbrella.h */,
-				6EB98E47950B273D99934C34EE610A92 /* Pods-FFmpegTesterTests.debug.xcconfig */,
-				ACF1DA85D78AA6C1A6789E39E73989F2 /* Pods-FFmpegTesterTests.release.xcconfig */,
-			);
-			name = "Pods-FFmpegTesterTests";
-			path = "Target Support Files/Pods-FFmpegTesterTests";
-			sourceTree = "<group>";
-		};
-		A776D207966916196FA4C2DFEAFB8563 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				32EDBE7F7C0AE89E4E93E0E2F8B6B95C /* libavcodec.a */,
-				C4B7CD11CFE060CF0F7B138B4C88C4A1 /* libavdevice.a */,
-				CE90AF2594D915FA0D50326C51574DD5 /* libavfilter.a */,
-				1B54949DE4CE2045DA07FABC113BD3A2 /* libavformat.a */,
-				A5649E612DE086F3B58380A52FD6A981 /* libavutil.a */,
-				DF1E90799AF576CA1F0C98C6E8DE56F3 /* libswresample.a */,
-				92E2CD83B52D8CA8A117C545D18AA965 /* libswscale.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BC0FA9FC5F4E8846481229F1C70D62B9 /* Pods-FFmpegTester */ = {
-			isa = PBXGroup;
-			children = (
-				0479C74DBDB8CFCEA2CF60EC3A9126BA /* Info.plist */,
-				954631D5CC5EFE235623F6D83DD584AC /* Pods-FFmpegTester.modulemap */,
-				9AFAAE9EA27ED87CF90400F274F85C71 /* Pods-FFmpegTester-acknowledgements.markdown */,
-				4F47E1B4E2F0CB9014949C029A139A6D /* Pods-FFmpegTester-acknowledgements.plist */,
-				3A68DCF91683EBF6F8CF5B897AC2AEE1 /* Pods-FFmpegTester-dummy.m */,
-				D121227697CA11C0B0A33A902019FEFF /* Pods-FFmpegTester-frameworks.sh */,
-				0D6BE53201DF17DF80BF81863F7163AD /* Pods-FFmpegTester-resources.sh */,
-				B2D670822FF1800A229E5EBE80AFB2F9 /* Pods-FFmpegTester-umbrella.h */,
-				EC5CA168EC3DE0F1FC40F5D7C3B1D711 /* Pods-FFmpegTester.debug.xcconfig */,
-				36AAECE4781685D3C4195FDF0A74D1B5 /* Pods-FFmpegTester.release.xcconfig */,
-			);
-			name = "Pods-FFmpegTester";
-			path = "Target Support Files/Pods-FFmpegTester";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CD5E104940D09E02B0328EFEEBB056CE /* Pods-FFmpegTesterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4F729190DE358DBE3FA66FDBCF1166CF /* Info.plist */,
-				2820EDF46B0FD53CC18E74E8A31058D6 /* Pods-FFmpegTesterUITests.modulemap */,
-				21A539A51AE3ECCE0359F6B03D46C53D /* Pods-FFmpegTesterUITests-acknowledgements.markdown */,
-				47324D75C0852A0516EF08220B45CEEA /* Pods-FFmpegTesterUITests-acknowledgements.plist */,
-				F0F1E9F4332AFBBDBB8739158AA08824 /* Pods-FFmpegTesterUITests-dummy.m */,
-				CDC233D9DE6D26D394CCD51D9688CC4D /* Pods-FFmpegTesterUITests-frameworks.sh */,
-				4CFE2FAC0943F6DBE00E84136A49813E /* Pods-FFmpegTesterUITests-resources.sh */,
-				EB225DCF00E4331210291B5F450B6943 /* Pods-FFmpegTesterUITests-umbrella.h */,
-				DF0C96729E45B05944CFAD6491E904A7 /* Pods-FFmpegTesterUITests.debug.xcconfig */,
-				1422763B9C9E1F79259EC9137803EF80 /* Pods-FFmpegTesterUITests.release.xcconfig */,
-			);
-			name = "Pods-FFmpegTesterUITests";
-			path = "Target Support Files/Pods-FFmpegTesterUITests";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		1D53CF2A8124EE812D5597D43856F9D2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6D4A3D37A4A0102583F79514742CCA0 /* Pods-FFmpegTesterUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		921457AB2A807D84F3D66B767B2ACDC3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99F547FA211D2BDFACE4803EC2D626E2 /* Pods-FFmpegTesterTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B7CA8287EECB367D9498D388C2EC0A7C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FBB89A52080D3754E55ABC1824B66AA6 /* Pods-FFmpegTester-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		42D1A2A8B666DACB68F41B8F7660D1CD /* Pods-FFmpegTesterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CBECF47F7A304AF8896D2DDBFB04DC54 /* Build configuration list for PBXNativeTarget "Pods-FFmpegTesterUITests" */;
-			buildPhases = (
-				207FC28B804CDDAF6184AC023DC4DA63 /* Sources */,
-				2E558CBB1C655D43B4905727E9F5889B /* Frameworks */,
-				1D53CF2A8124EE812D5597D43856F9D2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-FFmpegTesterUITests";
-			productName = "Pods-FFmpegTesterUITests";
-			productReference = AD6D25E698F87977DBF05F87F7A06319 /* Pods_FFmpegTesterUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		53D2F3AC84CFC0DD3C997BA634C7B4B3 /* Pods-FFmpegTester */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BEAF41CD529ADBE48DEF5145AF54389E /* Build configuration list for PBXNativeTarget "Pods-FFmpegTester" */;
-			buildPhases = (
-				C2042F5896D44C5EF80C7B43DF708457 /* Sources */,
-				0C3251EC624594B08AAD93D43FF09E46 /* Frameworks */,
-				B7CA8287EECB367D9498D388C2EC0A7C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-FFmpegTester";
-			productName = "Pods-FFmpegTester";
-			productReference = D01147C5C28D7C6BF65BBD1BD3385D74 /* Pods_FFmpegTester.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D9B55B3BD0FD5FB3BA6D676028EC0368 /* Pods-FFmpegTesterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E77D58604FD628A892BDC7F15408F10 /* Build configuration list for PBXNativeTarget "Pods-FFmpegTesterTests" */;
-			buildPhases = (
-				08C1E9CBF2B0B06E1D160F4C231FA980 /* Sources */,
-				7142891D95F7386F03F6A6D6EE2FD61A /* Frameworks */,
-				921457AB2A807D84F3D66B767B2ACDC3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-FFmpegTesterTests";
-			productName = "Pods-FFmpegTesterTests";
-			productReference = E28999D0EA05FB8F2A9A1F64241F1A24 /* Pods_FFmpegTesterTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 97C7925A67E33C8EBBBDDC693653682E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				53D2F3AC84CFC0DD3C997BA634C7B4B3 /* Pods-FFmpegTester */,
-				D9B55B3BD0FD5FB3BA6D676028EC0368 /* Pods-FFmpegTesterTests */,
-				42D1A2A8B666DACB68F41B8F7660D1CD /* Pods-FFmpegTesterUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		08C1E9CBF2B0B06E1D160F4C231FA980 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				39474A89E7AB1E82F54F4E22DC5915FF /* Pods-FFmpegTesterTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		207FC28B804CDDAF6184AC023DC4DA63 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				023B3ADC983CC6DAAF7D0778346F0671 /* Pods-FFmpegTesterUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2042F5896D44C5EF80C7B43DF708457 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03D4DCD2142D82A48A23D28477F1599B /* Pods-FFmpegTester-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin XCBuildConfiguration section */
-		058C365F38A34FCA1A524D657A1713ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC5CA168EC3DE0F1FC40F5D7C3B1D711 /* Pods-FFmpegTester.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FFmpegTester/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FFmpegTester/Pods-FFmpegTester.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FFmpegTester;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		17B5A50F63E0E09CA019221408B30A96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EB98E47950B273D99934C34EE610A92 /* Pods-FFmpegTesterTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FFmpegTesterTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FFmpegTesterTests/Pods-FFmpegTesterTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FFmpegTesterTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2588EA364419D831347938453F4F6DE5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		61AD4929AC3440F8BFA0595E8DCD90C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		63B9E3931A9737AD555A6F1C113B5ABC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF0C96729E45B05944CFAD6491E904A7 /* Pods-FFmpegTesterUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FFmpegTesterUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FFmpegTesterUITests/Pods-FFmpegTesterUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FFmpegTesterUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		779EA06E9A8CDE8BB0E86AC0C5FE291E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1422763B9C9E1F79259EC9137803EF80 /* Pods-FFmpegTesterUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FFmpegTesterUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FFmpegTesterUITests/Pods-FFmpegTesterUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FFmpegTesterUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B1F8F81E0367FABB8FFC026EBA2D3167 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36AAECE4781685D3C4195FDF0A74D1B5 /* Pods-FFmpegTester.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FFmpegTester/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FFmpegTester/Pods-FFmpegTester.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FFmpegTester;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CBFFF330B282CFC42889FC8D09AEF43E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACF1DA85D78AA6C1A6789E39E73989F2 /* Pods-FFmpegTesterTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FFmpegTesterTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FFmpegTesterTests/Pods-FFmpegTesterTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FFmpegTesterTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2588EA364419D831347938453F4F6DE5 /* Debug */,
-				61AD4929AC3440F8BFA0595E8DCD90C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E77D58604FD628A892BDC7F15408F10 /* Build configuration list for PBXNativeTarget "Pods-FFmpegTesterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				17B5A50F63E0E09CA019221408B30A96 /* Debug */,
-				CBFFF330B282CFC42889FC8D09AEF43E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BEAF41CD529ADBE48DEF5145AF54389E /* Build configuration list for PBXNativeTarget "Pods-FFmpegTester" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				058C365F38A34FCA1A524D657A1713ED /* Debug */,
-				B1F8F81E0367FABB8FFC026EBA2D3167 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CBECF47F7A304AF8896D2DDBFB04DC54 /* Build configuration list for PBXNativeTarget "Pods-FFmpegTesterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63B9E3931A9737AD555A6F1C113B5ABC /* Debug */,
-				779EA06E9A8CDE8BB0E86AC0C5FE291E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>023B3ADC983CC6DAAF7D0778346F0671</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F0F1E9F4332AFBBDBB8739158AA08824</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>034014829C1E4434983CF3A690C12017</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_DEBUG=1</string>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>03D4DCD2142D82A48A23D28477F1599B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3A68DCF91683EBF6F8CF5B897AC2AEE1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0479C74DBDB8CFCEA2CF60EC3A9126BA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06BA6F041C46A09065BAA5BCEAB1007E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>vorbis_parser.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/vorbis_parser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>08C1E9CBF2B0B06E1D160F4C231FA980</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>39474A89E7AB1E82F54F4E22DC5915FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>095C1874F2BE217850FC64154BA5B58F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>EC5CA168EC3DE0F1FC40F5D7C3B1D711</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTester/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTester/Pods-FFmpegTester.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_FFmpegTester</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0A9840DF356BD0C67DE9C1FD970D09E0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>version.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavdevice/version.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0AD0FE59D33C0E8BCEFC6CC4A34B7C0D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>bprint.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/bprint.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0B19938D9DD8DD9BD073D421C12D686C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>cast5.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/cast5.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0BA89BEA6E559DF70D6AB89924299E73</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avformat.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavformat/avformat.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0C3251EC624594B08AAD93D43FF09E46</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>18D411A2AE406FA311E81015A4DE9974</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0D6BE53201DF17DF80BF81863F7163AD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>108CA4D7153AC3FEA712F90DC8D6D289</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BC0FA9FC5F4E8846481229F1C70D62B9</string>
+				<string>9F0DE7E2CC3DFE844D1BED5254FFD07F</string>
+				<string>CD5E104940D09E02B0328EFEEBB056CE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1161683D73AEBF1C443F2D0E14FD16E9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>swscale.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libswscale/swscale.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1422763B9C9E1F79259EC9137803EF80</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15E1F491B6B9D473F510DDDA2364487D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>murmur3.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/murmur3.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>16465463311E0BBEF41412190199E1BA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>replaygain.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/replaygain.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1768AE1E458FFF48379D104594F6DDD2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ffversion.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/ffversion.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18D411A2AE406FA311E81015A4DE9974</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1A65763F5CDE386F2436BFDAD2A6DB41</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>36AAECE4781685D3C4195FDF0A74D1B5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTester/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTester/Pods-FFmpegTester.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_FFmpegTester</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1AB6045F3C394018A2B8D7258CE158C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>69E6A8724B4DA68756172D37C2497E52</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FFmpeg</string>
+			<key>path</key>
+			<string>FFmpeg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1B54949DE4CE2045DA07FABC113BD3A2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libavformat.a</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/lib/libavformat.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1C85B53B514140239342BE6060EA1A39</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>d3d11va.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/d3d11va.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1D53CF2A8124EE812D5597D43856F9D2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B6D4A3D37A4A0102583F79514742CCA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1DE39278A2A553CB4708A1D1128E079D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1E230816E29B6B17DA55DDE5F0250439</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>asrc_abuffer.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavfilter/asrc_abuffer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1E863985A2E4D3A19CB3B306E4772E5C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>parseutils.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/parseutils.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1EB6B468C004F63BDDD9462063434299</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>log.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/log.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>207FC28B804CDDAF6184AC023DC4DA63</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>023B3ADC983CC6DAAF7D0778346F0671</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>21A539A51AE3ECCE0359F6B03D46C53D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>22DFBE25B387DF200CAEB628087493BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>tea.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/tea.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2623934D991EECBC2415E25DF04FB11A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2820EDF46B0FD53CC18E74E8A31058D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29A753B45D1B95B2043514B574A0AC24</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>eval.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/eval.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29C46F44A809336CC24F310789074C7E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2BBEABDA2278E50A2DEEFE3E7782AC39</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>timecode.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/timecode.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C02DFE9FE84F21E9D804C824191C750</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>buffer.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/buffer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D4E6344393377B01D3F52C7E4DFA866</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>attributes.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/attributes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>034014829C1E4434983CF3A690C12017</string>
+				<string>C7E474A03CAE21F1CB6046E7344C59BD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2E558CBB1C655D43B4905727E9F5889B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6EA5A25BB67FA675A9FF955F63E90D3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>310695505F008F8884161AABB9EB1636</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>old_codec_ids.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/old_codec_ids.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32EDBE7F7C0AE89E4E93E0E2F8B6B95C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libavcodec.a</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/lib/libavcodec.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>33ECB725C5E82170DC2AE9D3EA06637F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>audio_fifo.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/audio_fifo.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>36AAECE4781685D3C4195FDF0A74D1B5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3751F4ECDFB4CA8B92A3AB189C588959</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avcodec.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavfilter/avcodec.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>39474A89E7AB1E82F54F4E22DC5915FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2623934D991EECBC2415E25DF04FB11A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3A68DCF91683EBF6F8CF5B897AC2AEE1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C06633672C821121FA93C219A0A62BC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>vdpau.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/vdpau.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>40EB60BF2502645F24399AA12602E6D9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>display.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/display.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42D1A2A8B666DACB68F41B8F7660D1CD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CBECF47F7A304AF8896D2DDBFB04DC54</string>
+			<key>buildPhases</key>
+			<array>
+				<string>207FC28B804CDDAF6184AC023DC4DA63</string>
+				<string>2E558CBB1C655D43B4905727E9F5889B</string>
+				<string>1D53CF2A8124EE812D5597D43856F9D2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-FFmpegTesterUITests</string>
+			<key>productName</key>
+			<string>Pods-FFmpegTesterUITests</string>
+			<key>productReference</key>
+			<string>AD6D25E698F87977DBF05F87F7A06319</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>46AF29140E2A31C1FFA905BDD9300A53</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>ACF1DA85D78AA6C1A6789E39E73989F2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTesterTests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTesterTests/Pods-FFmpegTesterTests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_FFmpegTesterTests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>47324D75C0852A0516EF08220B45CEEA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47AB7A121AD1B385E97E489AF7AF29A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avassert.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/avassert.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CFE2FAC0943F6DBE00E84136A49813E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4E2F0D75415F7D6660C1FA40879C30B9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>dv_profile.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/dv_profile.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F47E1B4E2F0CB9014949C029A139A6D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F729190DE358DBE3FA66FDBCF1166CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>53D2F3AC84CFC0DD3C997BA634C7B4B3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>BEAF41CD529ADBE48DEF5145AF54389E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C2042F5896D44C5EF80C7B43DF708457</string>
+				<string>0C3251EC624594B08AAD93D43FF09E46</string>
+				<string>B7CA8287EECB367D9498D388C2EC0A7C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-FFmpegTester</string>
+			<key>productName</key>
+			<string>Pods-FFmpegTester</string>
+			<key>productReference</key>
+			<string>D01147C5C28D7C6BF65BBD1BD3385D74</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>59C3D98202D1ECAF85FC556B985E0D38</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avfiltergraph.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavfilter/avfiltergraph.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E77D58604FD628A892BDC7F15408F10</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F7344DD6B34CFCDF936168778D236B1A</string>
+				<string>46AF29140E2A31C1FFA905BDD9300A53</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>69BE1E44CF519D28B2CF2B30D5957D91</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>lzo.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/lzo.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>69E6A8724B4DA68756172D37C2497E52</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D1E37D31E45767B227289EC3ECC3E7C4</string>
+				<string>A50192AE347A67290DF938868A65F828</string>
+				<string>1E230816E29B6B17DA55DDE5F0250439</string>
+				<string>2D4E6344393377B01D3F52C7E4DFA866</string>
+				<string>33ECB725C5E82170DC2AE9D3EA06637F</string>
+				<string>E9A7CB59732FA5B9DA52C7F954E83C0F</string>
+				<string>47AB7A121AD1B385E97E489AF7AF29A5</string>
+				<string>DCAEFD77E97F66A7107E743918144267</string>
+				<string>3751F4ECDFB4CA8B92A3AB189C588959</string>
+				<string>C46C0DE789D01F504A25F223CF5653C6</string>
+				<string>7C493121AF272097EAE45360A17249C0</string>
+				<string>D6795F7A002E183D7A1F3D777C73C52D</string>
+				<string>F99A05D2648A1F94728C80AF15C7930F</string>
+				<string>59C3D98202D1ECAF85FC556B985E0D38</string>
+				<string>0BA89BEA6E559DF70D6AB89924299E73</string>
+				<string>B658C11F6A64919DDDE701794E1A5DF2</string>
+				<string>7BD395C69FF54CCAF12A788819D93BF0</string>
+				<string>76CB7E5755C22661BE9771642475772D</string>
+				<string>F03EED3733F4E96B15B383AAA5BEFAF1</string>
+				<string>FEC879AB71C3CE749609CDAB30EBAF4C</string>
+				<string>0AD0FE59D33C0E8BCEFC6CC4A34B7C0D</string>
+				<string>7DABC8DEE2DAC0E1860E56D4DFD80FDB</string>
+				<string>2C02DFE9FE84F21E9D804C824191C750</string>
+				<string>80A7DEE7D9BFF390BFF9EE523125FCA0</string>
+				<string>748A86C453B57DF3F116D50EF4747F66</string>
+				<string>89E9491D611C41938F247EF29FF304E8</string>
+				<string>0B19938D9DD8DD9BD073D421C12D686C</string>
+				<string>748F8697A64DF78ABABF6EC7F8799556</string>
+				<string>D975CE05EECBA48F27457579BB97E06E</string>
+				<string>7948F33DB0C140709C0A5AF7530244BB</string>
+				<string>CEC5D987710804D7392A82F80005B483</string>
+				<string>1C85B53B514140239342BE6060EA1A39</string>
+				<string>96DD9E773F753DD734700A8F22569576</string>
+				<string>40EB60BF2502645F24399AA12602E6D9</string>
+				<string>7D667B0BE5623CF92892DC1FE6E1F7DD</string>
+				<string>4E2F0D75415F7D6660C1FA40879C30B9</string>
+				<string>D169B297F7B27B55B58875322FEFE9EF</string>
+				<string>BD1ADF758B52982A89FCA402FE42F711</string>
+				<string>29A753B45D1B95B2043514B574A0AC24</string>
+				<string>1768AE1E458FFF48379D104594F6DDD2</string>
+				<string>A53849900072C2ACDD139B22ED3B57A0</string>
+				<string>A4E944A9CEC29410186FABA57A7F484D</string>
+				<string>F9AB2D6B9B2CFC815E5C46C55A4E6CBD</string>
+				<string>E57EDD86C58138ECDBA817CCDF844785</string>
+				<string>924618704B89A5CBA5061BB64FE6CD44</string>
+				<string>C952420563AA3BDE35D4BCACD2516DB3</string>
+				<string>DFE8705E309B78017F293D414B47F9BE</string>
+				<string>9F8BDB0CA0855823FF447EC84F300B5A</string>
+				<string>A52861E219EC9594D86E8C302AE1C1B7</string>
+				<string>1EB6B468C004F63BDDD9462063434299</string>
+				<string>69BE1E44CF519D28B2CF2B30D5957D91</string>
+				<string>9908B9F5122E9232487B76316A72C832</string>
+				<string>91EFCB999BB9532E345FDE761F54E2AC</string>
+				<string>B42836B6C50471DE9A6000CD9A48B55E</string>
+				<string>75A736255C9A1F49A1B06FBFAB55F185</string>
+				<string>951879DA87E3577B3226C9D6C212739B</string>
+				<string>15E1F491B6B9D473F510DDDA2364487D</string>
+				<string>310695505F008F8884161AABB9EB1636</string>
+				<string>7BADB9D90844E62EED251C001F1313C4</string>
+				<string>F98B3A7770EA4339217E90F37767B685</string>
+				<string>1E863985A2E4D3A19CB3B306E4772E5C</string>
+				<string>71E7B43AAA1E17AAD7C2884826447325</string>
+				<string>A4A820CAACC6ED0E53509E91B4F06F75</string>
+				<string>A108930D65C5EC8A6CB2C2B40F58B3CC</string>
+				<string>BCCD470AB5BFBF49125AE96C4B051FFE</string>
+				<string>9EE1695B5AA19D312E7FF647A005BEE2</string>
+				<string>AF195481F44D46176943D199BCB21E39</string>
+				<string>16465463311E0BBEF41412190199E1BA</string>
+				<string>EFB2E9FE3F10D527402AFD0A9CAE1D78</string>
+				<string>A8AC26E31CFD6F9EF0C1D2F0281E94DA</string>
+				<string>8036B2256F81B2BF12F8E8BB9AAE051F</string>
+				<string>F0038AC4647A8B71198E8DC673EA61B0</string>
+				<string>B83BB609F1A3B7A4D13C5FF77F33B85D</string>
+				<string>6B8E64832BB20C34FB7378F16229DE1E</string>
+				<string>1161683D73AEBF1C443F2D0E14FD16E9</string>
+				<string>22DFBE25B387DF200CAEB628087493BB</string>
+				<string>F8DAB036E8409E09A0FE30CD0F781953</string>
+				<string>D096F560AB8E96D2EDEE5C65F73F3610</string>
+				<string>2BBEABDA2278E50A2DEEFE3E7782AC39</string>
+				<string>BFFD37B7A5B56450BE7C766A8E08F91D</string>
+				<string>A391556FEA067B5B729A12EA8560F379</string>
+				<string>F029D2FC5B79172F399953C917ED14A7</string>
+				<string>F03606143D892B821F442E1EEE9851D2</string>
+				<string>3C06633672C821121FA93C219A0A62BC</string>
+				<string>E9029AA937B044D70E2490EC44113344</string>
+				<string>AFBD10F0F053CADE1F1E289564682988</string>
+				<string>9004B350BB4AE4F48BEAC9EAFD0506A8</string>
+				<string>0A9840DF356BD0C67DE9C1FD970D09E0</string>
+				<string>F10F2E928D96776374629DFAB139B0BC</string>
+				<string>89450FD3F035FE20A2A7C013702B6B7B</string>
+				<string>DF4178E9F3A14092871338E09BB8E3D9</string>
+				<string>8FFA0EE83FF3C05D7CA815939ED4F510</string>
+				<string>06BA6F041C46A09065BAA5BCEAB1007E</string>
+				<string>F64DA5E6DDDF10BAAACD392846EDFF23</string>
+				<string>D60D89AF659FCF4A4DD69D09AFC587E4</string>
+				<string>A776D207966916196FA4C2DFEAFB8563</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>precompiled</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6B8E64832BB20C34FB7378F16229DE1E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>swresample.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libswresample/swresample.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6EA5A25BB67FA675A9FF955F63E90D3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6EB98E47950B273D99934C34EE610A92</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7142891D95F7386F03F6A6D6EE2FD61A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1DE39278A2A553CB4708A1D1128E079D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>71E7B43AAA1E17AAD7C2884826447325</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>pixdesc.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/pixdesc.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>748A86C453B57DF3F116D50EF4747F66</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>buffersrc.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavfilter/buffersrc.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>748F8697A64DF78ABABF6EC7F8799556</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>channel_layout.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/channel_layout.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75A736255C9A1F49A1B06FBFAB55F185</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>mem.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/mem.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76CB7E5755C22661BE9771642475772D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avutil.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/avutil.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>78EC6B95C050C9A71DE6D0B7119A0F82</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7948F33DB0C140709C0A5AF7530244BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>cpu.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/cpu.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7BADB9D90844E62EED251C001F1313C4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>old_pix_fmts.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/old_pix_fmts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7BD395C69FF54CCAF12A788819D93BF0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avstring.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/avstring.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7C493121AF272097EAE45360A17249C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avdevice.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavdevice/avdevice.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D667B0BE5623CF92892DC1FE6E1F7DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>downmix_info.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/downmix_info.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DABC8DEE2DAC0E1860E56D4DFD80FDB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>bswap.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/bswap.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>9A028C5662D7E33937B66A40F249E86A</string>
+				<string>97C7925A67E33C8EBBBDDC693653682E</string>
+				<string>108CA4D7153AC3FEA712F90DC8D6D289</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8036B2256F81B2BF12F8E8BB9AAE051F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sha.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/sha.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>80A7DEE7D9BFF390BFF9EE523125FCA0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>buffersink.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavfilter/buffersink.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>89450FD3F035FE20A2A7C013702B6B7B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>version.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavfilter/version.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>89E9491D611C41938F247EF29FF304E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>camellia.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/camellia.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8FFA0EE83FF3C05D7CA815939ED4F510</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>videotoolbox.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/videotoolbox.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9004B350BB4AE4F48BEAC9EAFD0506A8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>version.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libswresample/version.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>91EFCB999BB9532E345FDE761F54E2AC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>mathematics.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/mathematics.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>921457AB2A807D84F3D66B767B2ACDC3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>99F547FA211D2BDFACE4803EC2D626E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>924618704B89A5CBA5061BB64FE6CD44</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>hmac.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/hmac.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>92E2CD83B52D8CA8A117C545D18AA965</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libswscale.a</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/lib/libswscale.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>text.script.ruby</string>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>951879DA87E3577B3226C9D6C212739B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>motion_vector.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/motion_vector.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>954631D5CC5EFE235623F6D83DD584AC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96DD9E773F753DD734700A8F22569576</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>dict.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/dict.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97C7925A67E33C8EBBBDDC693653682E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D01147C5C28D7C6BF65BBD1BD3385D74</string>
+				<string>E28999D0EA05FB8F2A9A1F64241F1A24</string>
+				<string>AD6D25E698F87977DBF05F87F7A06319</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9908B9F5122E9232487B76316A72C832</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>macros.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/macros.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99F547FA211D2BDFACE4803EC2D626E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>29C46F44A809336CC24F310789074C7E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9A028C5662D7E33937B66A40F249E86A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1AB6045F3C394018A2B8D7258CE158C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9AFAAE9EA27ED87CF90400F274F85C71</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EE1695B5AA19D312E7FF647A005BEE2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>random_seed.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/random_seed.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9F0DE7E2CC3DFE844D1BED5254FFD07F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5099F878459F18F43BA192ACC04964A</string>
+				<string>F469459658E27ECE3CE924C9426795E0</string>
+				<string>C1BB1E55AADFF9204B6C1A64124852BB</string>
+				<string>78EC6B95C050C9A71DE6D0B7119A0F82</string>
+				<string>2623934D991EECBC2415E25DF04FB11A</string>
+				<string>E4926F92F6A5379250C409F0015C565B</string>
+				<string>A75DEC4735858BA831DEF65197B0A736</string>
+				<string>29C46F44A809336CC24F310789074C7E</string>
+				<string>6EB98E47950B273D99934C34EE610A92</string>
+				<string>ACF1DA85D78AA6C1A6789E39E73989F2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-FFmpegTesterTests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-FFmpegTesterTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9F8BDB0CA0855823FF447EC84F300B5A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>intreadwrite.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/intreadwrite.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A108930D65C5EC8A6CB2C2B40F58B3CC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>pixfmt.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/pixfmt.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A391556FEA067B5B729A12EA8560F379</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>twofish.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/twofish.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A4A820CAACC6ED0E53509E91B4F06F75</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>pixelutils.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/pixelutils.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A4E944A9CEC29410186FABA57A7F484D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>file.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/file.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A50192AE347A67290DF938868A65F828</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>aes.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/aes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A52861E219EC9594D86E8C302AE1C1B7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>lfg.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/lfg.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A53849900072C2ACDD139B22ED3B57A0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>fifo.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/fifo.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A5649E612DE086F3B58380A52FD6A981</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libavutil.a</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/lib/libavutil.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A75DEC4735858BA831DEF65197B0A736</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A776D207966916196FA4C2DFEAFB8563</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>32EDBE7F7C0AE89E4E93E0E2F8B6B95C</string>
+				<string>C4B7CD11CFE060CF0F7B138B4C88C4A1</string>
+				<string>CE90AF2594D915FA0D50326C51574DD5</string>
+				<string>1B54949DE4CE2045DA07FABC113BD3A2</string>
+				<string>A5649E612DE086F3B58380A52FD6A981</string>
+				<string>DF1E90799AF576CA1F0C98C6E8DE56F3</string>
+				<string>92E2CD83B52D8CA8A117C545D18AA965</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC26E31CFD6F9EF0C1D2F0281E94DA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>samplefmt.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/samplefmt.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ACF1DA85D78AA6C1A6789E39E73989F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD6D25E698F87977DBF05F87F7A06319</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_FFmpegTesterUITests.framework</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AF195481F44D46176943D199BCB21E39</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>rational.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/rational.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AFBD10F0F053CADE1F1E289564682988</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>version.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/version.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2D670822FF1800A229E5EBE80AFB2F9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B42836B6C50471DE9A6000CD9A48B55E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>md5.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/md5.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B658C11F6A64919DDDE701794E1A5DF2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avio.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavformat/avio.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B6C5DF0C91BFFF8403DE4A17D43A7794</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1422763B9C9E1F79259EC9137803EF80</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTesterUITests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTesterUITests/Pods-FFmpegTesterUITests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_FFmpegTesterUITests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B6D4A3D37A4A0102583F79514742CCA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EB225DCF00E4331210291B5F450B6943</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B7CA8287EECB367D9498D388C2EC0A7C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FBB89A52080D3754E55ABC1824B66AA6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B83BB609F1A3B7A4D13C5FF77F33B85D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>stereo3d.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/stereo3d.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC0FA9FC5F4E8846481229F1C70D62B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0479C74DBDB8CFCEA2CF60EC3A9126BA</string>
+				<string>954631D5CC5EFE235623F6D83DD584AC</string>
+				<string>9AFAAE9EA27ED87CF90400F274F85C71</string>
+				<string>4F47E1B4E2F0CB9014949C029A139A6D</string>
+				<string>3A68DCF91683EBF6F8CF5B897AC2AEE1</string>
+				<string>D121227697CA11C0B0A33A902019FEFF</string>
+				<string>0D6BE53201DF17DF80BF81863F7163AD</string>
+				<string>B2D670822FF1800A229E5EBE80AFB2F9</string>
+				<string>EC5CA168EC3DE0F1FC40F5D7C3B1D711</string>
+				<string>36AAECE4781685D3C4195FDF0A74D1B5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-FFmpegTester</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-FFmpegTester</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BCCD470AB5BFBF49125AE96C4B051FFE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>qsv.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/qsv.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BD1ADF758B52982A89FCA402FE42F711</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>error.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/error.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BEAF41CD529ADBE48DEF5145AF54389E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>095C1874F2BE217850FC64154BA5B58F</string>
+				<string>1A65763F5CDE386F2436BFDAD2A6DB41</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>BFF4E4B46D696B11D192A8A68D5E485C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DF0C96729E45B05944CFAD6491E904A7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTesterUITests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTesterUITests/Pods-FFmpegTesterUITests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_FFmpegTesterUITests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>BFFD37B7A5B56450BE7C766A8E08F91D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>timestamp.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/timestamp.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C1BB1E55AADFF9204B6C1A64124852BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C2042F5896D44C5EF80C7B43DF708457</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>03D4DCD2142D82A48A23D28477F1599B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C46C0DE789D01F504A25F223CF5653C6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avconfig.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/avconfig.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4B7CD11CFE060CF0F7B138B4C88C4A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libavdevice.a</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/lib/libavdevice.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7E474A03CAE21F1CB6046E7344C59BD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_RELEASE=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C952420563AA3BDE35D4BCACD2516DB3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>imgutils.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/imgutils.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CBECF47F7A304AF8896D2DDBFB04DC54</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>BFF4E4B46D696B11D192A8A68D5E485C</string>
+				<string>B6C5DF0C91BFFF8403DE4A17D43A7794</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CD5E104940D09E02B0328EFEEBB056CE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4F729190DE358DBE3FA66FDBCF1166CF</string>
+				<string>2820EDF46B0FD53CC18E74E8A31058D6</string>
+				<string>21A539A51AE3ECCE0359F6B03D46C53D</string>
+				<string>47324D75C0852A0516EF08220B45CEEA</string>
+				<string>F0F1E9F4332AFBBDBB8739158AA08824</string>
+				<string>CDC233D9DE6D26D394CCD51D9688CC4D</string>
+				<string>4CFE2FAC0943F6DBE00E84136A49813E</string>
+				<string>EB225DCF00E4331210291B5F450B6943</string>
+				<string>DF0C96729E45B05944CFAD6491E904A7</string>
+				<string>1422763B9C9E1F79259EC9137803EF80</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-FFmpegTesterUITests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-FFmpegTesterUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CDC233D9DE6D26D394CCD51D9688CC4D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE90AF2594D915FA0D50326C51574DD5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libavfilter.a</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/lib/libavfilter.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>CEC5D987710804D7392A82F80005B483</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>crc.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/crc.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D01147C5C28D7C6BF65BBD1BD3385D74</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_FFmpegTester.framework</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D096F560AB8E96D2EDEE5C65F73F3610</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>time.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/time.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D121227697CA11C0B0A33A902019FEFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D169B297F7B27B55B58875322FEFE9EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>dxva2.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/dxva2.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1E37D31E45767B227289EC3ECC3E7C4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>adler32.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/adler32.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>97C7925A67E33C8EBBBDDC693653682E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>53D2F3AC84CFC0DD3C997BA634C7B4B3</string>
+				<string>D9B55B3BD0FD5FB3BA6D676028EC0368</string>
+				<string>42D1A2A8B666DACB68F41B8F7660D1CD</string>
+			</array>
+		</dict>
+		<key>D60D89AF659FCF4A4DD69D09AFC587E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>xvmc.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/xvmc.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D6795F7A002E183D7A1F3D777C73C52D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avfft.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/avfft.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D975CE05EECBA48F27457579BB97E06E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>common.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/common.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D9B55B3BD0FD5FB3BA6D676028EC0368</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>5E77D58604FD628A892BDC7F15408F10</string>
+			<key>buildPhases</key>
+			<array>
+				<string>08C1E9CBF2B0B06E1D160F4C231FA980</string>
+				<string>7142891D95F7386F03F6A6D6EE2FD61A</string>
+				<string>921457AB2A807D84F3D66B767B2ACDC3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-FFmpegTesterTests</string>
+			<key>productName</key>
+			<string>Pods-FFmpegTesterTests</string>
+			<key>productReference</key>
+			<string>E28999D0EA05FB8F2A9A1F64241F1A24</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>DCAEFD77E97F66A7107E743918144267</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avcodec.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/avcodec.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF0C96729E45B05944CFAD6491E904A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF1E90799AF576CA1F0C98C6E8DE56F3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libswresample.a</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/lib/libswresample.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF4178E9F3A14092871338E09BB8E3D9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>version.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/version.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DFE8705E309B78017F293D414B47F9BE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>intfloat.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/intfloat.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E28999D0EA05FB8F2A9A1F64241F1A24</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_FFmpegTesterTests.framework</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E4926F92F6A5379250C409F0015C565B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5099F878459F18F43BA192ACC04964A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E57EDD86C58138ECDBA817CCDF844785</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>hash.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/hash.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9029AA937B044D70E2490EC44113344</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>version.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavformat/version.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9A7CB59732FA5B9DA52C7F954E83C0F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>audioconvert.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/audioconvert.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EB225DCF00E4331210291B5F450B6943</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC5CA168EC3DE0F1FC40F5D7C3B1D711</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FFmpegTester.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EFB2E9FE3F10D527402AFD0A9CAE1D78</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ripemd.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/ripemd.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0038AC4647A8B71198E8DC673EA61B0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sha512.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/sha512.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F029D2FC5B79172F399953C917ED14A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>vaapi.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/vaapi.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F03606143D892B821F442E1EEE9851D2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>vda.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavcodec/vda.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F03EED3733F4E96B15B383AAA5BEFAF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>base64.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/base64.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0F1E9F4332AFBBDBB8739158AA08824</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterUITests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F10F2E928D96776374629DFAB139B0BC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>version.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libswscale/version.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F469459658E27ECE3CE924C9426795E0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-FFmpegTesterTests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F64DA5E6DDDF10BAAACD392846EDFF23</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>xtea.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/xtea.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7344DD6B34CFCDF936168778D236B1A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6EB98E47950B273D99934C34EE610A92</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTesterTests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FFmpegTesterTests/Pods-FFmpegTesterTests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_FFmpegTesterTests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F8DAB036E8409E09A0FE30CD0F781953</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>threadmessage.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/threadmessage.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F98B3A7770EA4339217E90F37767B685</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>opt.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/opt.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F99A05D2648A1F94728C80AF15C7930F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avfilter.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavfilter/avfilter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9AB2D6B9B2CFC815E5C46C55A4E6CBD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>frame.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/frame.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FBB89A52080D3754E55ABC1824B66AA6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2D670822FF1800A229E5EBE80AFB2F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FEC879AB71C3CE749609CDAB30EBAF4C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>blowfish.h</string>
+			<key>path</key>
+			<string>ffmpeg-ios-static-libs/include/libavutil/blowfish.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

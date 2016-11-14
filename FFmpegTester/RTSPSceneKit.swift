@@ -27,7 +27,7 @@ class RTSPSceneKit: UIViewController, SCNSceneRendererDelegate, UIGestureRecogni
     
     var lastFrameTime:Double = 0.0
     
-    var nextFrameTimer:NSTimer!
+    var nextFrameTimer:Timer!
     
     var scene:SCNScene!
     
@@ -63,8 +63,8 @@ class RTSPSceneKit: UIViewController, SCNSceneRendererDelegate, UIGestureRecogni
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
-        sceneView.backgroundColor = UIColor.darkGrayColor()
+    override func viewDidAppear(_ animated: Bool) {
+        sceneView.backgroundColor = UIColor.darkGray
         
         setUpCamera()
         setUpImageNode()
@@ -82,7 +82,7 @@ class RTSPSceneKit: UIViewController, SCNSceneRendererDelegate, UIGestureRecogni
         }
     }
     
-    override func willAnimateRotationToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+    override func willAnimateRotation(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
         let camerasNodeAngles = getCamerasNodeAngle()
         
          cameraNode.eulerAngles = SCNVector3Make(Float(camerasNodeAngles[0]), Float(camerasNodeAngles[1]), Float(camerasNodeAngles[2]))
@@ -106,7 +106,7 @@ extension RTSPSceneKit{
     func setUpAmbientLigh(){
         let ambientLightNode = SCNNode()
         ambientLightNode.light = SCNLight()
-        ambientLightNode.light?.type = SCNLightTypeAmbient
+        ambientLightNode.light?.type = SCNLight.LightType.ambient
         ambientLightNode.light?.color = UIColor(white: 0.67, alpha: 1.0)
         
         scene.rootNode.addChildNode(ambientLightNode)
@@ -115,7 +115,7 @@ extension RTSPSceneKit{
     func setUpOmniLight(){
         let omniLightNode = SCNNode()
         omniLightNode.light = SCNLight()
-        omniLightNode.light!.type = SCNLightTypeOmni
+        omniLightNode.light!.type = SCNLight.LightType.omni
         omniLightNode.light!.color = UIColor(white: 0.25, alpha: 1.0)
         omniLightNode.position = SCNVector3Make(0, 50, 50)
         scene.rootNode.addChildNode(omniLightNode)
@@ -135,7 +135,7 @@ extension RTSPSceneKit{
 
         imageNode = SCNNode()
         imageNode.geometry = SCNSphere(radius: 30)
-        imageNode.geometry?.firstMaterial?.doubleSided = true
+        imageNode.geometry?.firstMaterial?.isDoubleSided = true
         
 //        var transform = SCNMatrix4MakeRotation(Float(M_PI), 0.0, 0.0, 1.0)
 //        transform = SCNMatrix4Translate(transform, 1.0, 1.0, 0.0)
@@ -189,13 +189,13 @@ extension RTSPSceneKit{
         scene.rootNode.addChildNode(cameraYawNode)
         
         sceneView.pointOfView = cameraNode
-        sceneView.playing = true
+        sceneView.isPlaying = true
         sceneView.delegate = self
         
         // Respond to user head movement. Refreshes the position of the camera 60 times per second.
         motionManager = CMMotionManager()
         motionManager?.deviceMotionUpdateInterval = 1.0 / 60.0
-        motionManager?.startDeviceMotionUpdatesUsingReferenceFrame(CMAttitudeReferenceFrame.XArbitraryZVertical)
+        motionManager?.startDeviceMotionUpdates(using: CMAttitudeReferenceFrame.xArbitraryZVertical)
         
         // Add gestures on screen
         let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(RTSPSceneKit.panGesture(_:)))
@@ -217,9 +217,9 @@ extension RTSPSceneKit{
 //        }
 //    }
     
-    func panGesture(sender: UIPanGestureRecognizer){
+    func panGesture(_ sender: UIPanGestureRecognizer){
         
-        let translation = sender.translationInView(sender.view!)
+        let translation = sender.translation(in: sender.view!)
         let protection : Float = 2.0
         
         if (abs(Float(translation.x) - oldX) >= protection){
@@ -234,7 +234,7 @@ extension RTSPSceneKit{
             oldY = Float(translation.y)
         }
         
-        if(sender.state == UIGestureRecognizerState.Ended) {
+        if(sender.state == UIGestureRecognizerState.ended) {
             oldX = 0
             oldY = 0
         }
@@ -259,13 +259,13 @@ extension RTSPSceneKit{
         //        }
         
         
-        switch UIDevice.currentDevice().orientation{
-        case .Portrait, .Unknown:
+        switch UIDevice.current.orientation{
+        case .portrait, .unknown:
             camerasNodeAngle1 = -M_PI_2
 //            camerasNodeAngle1 = -M_PI
-        case .PortraitUpsideDown:
+        case .portraitUpsideDown:
             camerasNodeAngle1 = M_PI_2
-        case .LandscapeLeft:
+        case .landscapeLeft:
             camerasNodeAngle1 = 0.0
             camerasNodeAngle2 = M_PI
         default:
@@ -276,15 +276,15 @@ extension RTSPSceneKit{
         
     }
     
-    func renderer(renderer: SCNSceneRenderer, updateAtTime time: NSTimeInterval) {
-        dispatch_async(dispatch_get_main_queue()) {
+    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        DispatchQueue.main.async {
             
             if let mm = self.motionManager, let motion = mm.deviceMotion {
                 let currentAttitude = motion.attitude
                 
                 var roll: Double = currentAttitude.roll
                 
-                if UIDevice.currentDevice().orientation == .LandscapeRight{
+                if UIDevice.current.orientation == .landscapeRight{
                     roll = -1.0 * (-M_PI - roll)
                 }
                 
@@ -325,12 +325,12 @@ extension RTSPSceneKit{
             nextFrameTimer.invalidate()
         }
         
-        nextFrameTimer = NSTimer.scheduledTimerWithTimeInterval(1.0 / rtspPlayer.fps, target: self, selector: #selector(RTSPPanel.displayNextFrame(_:)), userInfo: nil, repeats: true)
+        nextFrameTimer = Timer.scheduledTimer(timeInterval: 1.0 / rtspPlayer.fps, target: self, selector: #selector(RTSPPanel.displayNextFrame(_:)), userInfo: nil, repeats: true)
         
     }
     
-    func displayNextFrame(timer:NSTimer){
-        let startTime:NSTimeInterval = NSDate().timeIntervalSinceReferenceDate
+    func displayNextFrame(_ timer:Timer){
+        let startTime:TimeInterval = Date().timeIntervalSinceReferenceDate
         
         if !rtspPlayer.stepFrame() {
             timer.invalidate()
@@ -346,7 +346,7 @@ extension RTSPSceneKit{
             
         }
         
-        let frameTime:Double = 1.0 / (NSDate().timeIntervalSinceReferenceDate / startTime)
+        let frameTime:Double = 1.0 / (Date().timeIntervalSinceReferenceDate / startTime)
         
         if lastFrameTime < 0.0 {
             lastFrameTime = frameTime
@@ -357,7 +357,7 @@ extension RTSPSceneKit{
         //        print("fps: \(rtspPlayer.fps)")
     }
     
-    private func getLERP(frameTime:Double,lastFrameTime:Double,factor:Double) -> Double {
+    fileprivate func getLERP(_ frameTime:Double,lastFrameTime:Double,factor:Double) -> Double {
         //        LERP(A,B,C) ((A)*(1.0-C)+(B)*C)
         return frameTime * (1.0 - factor) + lastFrameTime * factor
     }

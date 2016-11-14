@@ -6,7 +6,7 @@ target 'FFmpegTester' do
   use_frameworks!
 
   # Pods for FFmpegTester
-  pod 'FFmpeg', '~> 2.8' 
+  pod 'FFmpeg'
 
   target 'FFmpegTesterTests' do
     inherit! :search_paths

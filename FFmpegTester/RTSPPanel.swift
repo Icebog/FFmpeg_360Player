@@ -29,7 +29,7 @@ class RTSPPanel: UIViewController {
     
     var lastFrameTime:Double = 0.0
     
-    var nextFrameTimer:NSTimer!
+    var nextFrameTimer:Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class RTSPPanel: UIViewController {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         rtspPlayer = RTSPPlayer(videoPath: rtspTestPath, usesTcp: false)
 //        rtspPlayer.outputHeight = 960
@@ -56,7 +56,7 @@ class RTSPPanel: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         //RTSP release
         if nextFrameTimer != nil {
             nextFrameTimer.invalidate()
@@ -108,8 +108,8 @@ class RTSPPanel: UIViewController {
 //MARK: - Actions
 extension RTSPPanel{
     
-    @IBAction func cancelPressed(sender: UIButton) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func cancelPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
 //    func panGestureAction(sender: UIPanGestureRecognizer){
@@ -139,12 +139,12 @@ extension RTSPPanel{
             nextFrameTimer.invalidate()
         }
         
-        nextFrameTimer = NSTimer.scheduledTimerWithTimeInterval(1.0 / rtspPlayer.fps, target: self, selector: #selector(RTSPPanel.displayNextFrame(_:)), userInfo: nil, repeats: true)
+        nextFrameTimer = Timer.scheduledTimer(timeInterval: 1.0 / rtspPlayer.fps, target: self, selector: #selector(RTSPPanel.displayNextFrame(_:)), userInfo: nil, repeats: true)
        
     }
     
-    func displayNextFrame(timer:NSTimer){
-        let startTime:NSTimeInterval = NSDate().timeIntervalSinceReferenceDate
+    func displayNextFrame(_ timer:Timer){
+        let startTime:TimeInterval = Date().timeIntervalSinceReferenceDate
         
         if !rtspPlayer.stepFrame() {
             timer.invalidate()
@@ -153,7 +153,7 @@ extension RTSPPanel{
         
         imageView.image = rtspPlayer.currentImage
         
-        let frameTime:Double = 1.0 / (NSDate().timeIntervalSinceReferenceDate / startTime)
+        let frameTime:Double = 1.0 / (Date().timeIntervalSinceReferenceDate / startTime)
         
         if lastFrameTime < 0.0 {
             lastFrameTime = frameTime
@@ -164,7 +164,7 @@ extension RTSPPanel{
 //        print("fps: \(rtspPlayer.fps)")
     }
     
-    private func getLERP(frameTime:Double,lastFrameTime:Double,factor:Double) -> Double {
+    fileprivate func getLERP(_ frameTime:Double,lastFrameTime:Double,factor:Double) -> Double {
 //        LERP(A,B,C) ((A)*(1.0-C)+(B)*C)
         return frameTime * (1.0 - factor) + lastFrameTime * factor
     }

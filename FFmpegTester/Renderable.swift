@@ -10,5 +10,5 @@ import Foundation
 
 
 protocol Renderable{
-    func render(camera: Camera)
+    func render(_ camera: Camera)
 }

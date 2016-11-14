@@ -13,6 +13,7 @@
 		53220BBE1D4115400076C89B /* RTSPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53220BBD1D4115400076C89B /* RTSPPlayer.m */; };
 		5334E4741D4A4776004B92E2 /* RTSPSceneKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5334E4731D4A4776004B92E2 /* RTSPSceneKit.storyboard */; };
 		5334E4761D4A478F004B92E2 /* RTSPSceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5334E4751D4A478F004B92E2 /* RTSPSceneKit.swift */; };
+		535084B31DD097CC00A1727B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53559C691D3B24940009E706 /* AVFoundation.framework */; };
 		53559C321D3B1C740009E706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53559C311D3B1C740009E706 /* AppDelegate.swift */; };
 		53559C341D3B1C740009E706 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53559C331D3B1C740009E706 /* ViewController.swift */; };
 		53559C371D3B1C740009E706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53559C351D3B1C740009E706 /* Main.storyboard */; };
@@ -20,7 +21,6 @@
 		53559C3C1D3B1C740009E706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53559C3A1D3B1C740009E706 /* LaunchScreen.storyboard */; };
 		53559C471D3B1C740009E706 /* FFmpegTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53559C461D3B1C740009E706 /* FFmpegTesterTests.swift */; };
 		53559C521D3B1C740009E706 /* FFmpegTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53559C511D3B1C740009E706 /* FFmpegTesterUITests.swift */; };
-		53559C6A1D3B24940009E706 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53559C691D3B24940009E706 /* AVFoundation.framework */; };
 		538B36401D436120007DC323 /* RTSPPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538B363F1D436120007DC323 /* RTSPPanel.storyboard */; };
 		538B36421D436133007DC323 /* RTSPPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B36411D436133007DC323 /* RTSPPanel.swift */; };
 		538B36461D4398C2007DC323 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B36451D4398C2007DC323 /* Camera.swift */; };
@@ -63,6 +63,10 @@
 		53220BBD1D4115400076C89B /* RTSPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSPPlayer.m; sourceTree = "<group>"; };
 		5334E4731D4A4776004B92E2 /* RTSPSceneKit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RTSPSceneKit.storyboard; sourceTree = "<group>"; };
 		5334E4751D4A478F004B92E2 /* RTSPSceneKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTSPSceneKit.swift; sourceTree = "<group>"; };
+		535084A91DD0966300A1727B /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		535084AB1DD0967500A1727B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		535084AD1DD096D500A1727B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		535084B41DD097EC00A1727B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		53559C2E1D3B1C740009E706 /* FFmpegTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53559C311D3B1C740009E706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53559C331D3B1C740009E706 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,10 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535084B31DD097CC00A1727B /* AVFoundation.framework in Frameworks */,
 				53220B7A1D410D970076C89B /* libz.tbd in Frameworks */,
 				53220B781D410D8E0076C89B /* libbz2.tbd in Frameworks */,
 				53220B761D410D870076C89B /* libiconv.tbd in Frameworks */,
-				53559C6A1D3B24940009E706 /* AVFoundation.framework in Frameworks */,
 				D078CAD02046D3F34E954647 /* Pods_FFmpegTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +222,10 @@
 		6531577104BE3EDBA987C4BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				535084B41DD097EC00A1727B /* CoreFoundation.framework */,
+				535084AD1DD096D500A1727B /* CoreVideo.framework */,
+				535084AB1DD0967500A1727B /* Foundation.framework */,
+				535084A91DD0966300A1727B /* AVKit.framework */,
 				53220B791D410D970076C89B /* libz.tbd */,
 				53220B771D410D8E0076C89B /* libbz2.tbd */,
 				53220B751D410D870076C89B /* libiconv.tbd */,
@@ -306,13 +314,16 @@
 					53559C2D1D3B1C740009E706 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = RY86T9U7V6;
+						LastSwiftMigration = 0810;
 					};
 					53559C411D3B1C740009E706 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 53559C2D1D3B1C740009E706;
 					};
 					53559C4C1D3B1C740009E706 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 53559C2D1D3B1C740009E706;
 					};
 				};
@@ -660,6 +671,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FFmpegTester-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -677,6 +689,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.IcebogStudio.FFmpegTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FFmpegTester-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -689,6 +702,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.IcebogStudio.FFmpegTesterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFmpegTester.app/FFmpegTester";
 			};
 			name = Debug;
@@ -702,6 +716,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.IcebogStudio.FFmpegTesterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFmpegTester.app/FFmpegTester";
 			};
 			name = Release;
@@ -714,6 +729,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.IcebogStudio.FFmpegTesterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FFmpegTester;
 			};
 			name = Debug;
@@ -726,6 +742,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.IcebogStudio.FFmpegTesterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FFmpegTester;
 			};
 			name = Release;
